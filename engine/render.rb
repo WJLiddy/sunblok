@@ -1,5 +1,11 @@
 require 'colorize'
 require_relative 'pieces'
+# piece notation.
+#{
+    # position => [0,0]
+    # piece name => "R4"
+    # rotation => 2
+#}
 
 # render lists of white and black pieces
 def render(pieces_white,pieces_black)
@@ -82,26 +88,62 @@ def legal(piece, white_prev, black_prev, white_turn)
     return (piece_to_coord(piece) & illegal).any?
 
 end
-# takes list of object.
-#{
-    #[
-    # position => [0,0]
-    # piece name => "R4"
-    # rotation => 2
-    # for example
-#}
 
-white = [{"name" => "U", "rotation"=> 3, "position" => [3,3]}]
+white_pieces_left = get_piece_list.keys
+black_pieces_left = get_piece_list.keys
+white_pieces_left.delete("1")
+black_pieces_left.delete("1")
 
-# Render does no error checking, beware
-render(
-    white,
-    []
-    )
+white_pieces_placed = [        
+    {
+    "name" => "1",
+    "rotation" => 0,
+    "position" => [0,0]
+}]
 
-puts legal(
-    {"name" => "I3", "rotation"=> 2, "position" => [2,0]},
-    white,
-    [],
-    true
-)
+black_pieces_placed = [        
+    {
+    "name" => "1",
+    "rotation" => 0,
+    "position" => [13,13]
+}]
+
+white_turn = true
+
+while(true)
+
+    while(true)
+        # make up a move
+        move = 
+        {
+            "name" => white_turn ? white_pieces_left.sample : black_pieces_left.sample,
+            "rotation" => rand(4),
+            "position" => [rand(14),rand(14)]
+        }
+
+        if legal(move,white_pieces_placed,black_pieces_placed,white_turn)
+            if(white_turn)
+                white_pieces_placed.append(move)
+                white_pieces_left.delete(move["name"])
+            else
+                black_pieces_placed.append(move)
+                black_pieces_left.delete(move["name"])
+            end
+            break
+        end
+    end
+
+    # Render does no error checking, beware
+    render(
+        white_pieces_placed,
+        black_pieces_placed
+        )
+    white_turn = !white_turn
+
+    puts("White pieces left:\n" + white_pieces_left.to_s)
+    puts("Black pieces left:\n" + black_pieces_left.to_s)
+    puts(((white_turn) ? "White" : "Black") + " to move.")
+    sleep(1)
+end
+
+
