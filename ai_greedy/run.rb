@@ -61,7 +61,7 @@ class Greedy
                     }
                     # As an optimization, see if we overlapped something.
 
-                    overlaps_something = (piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]} & illegal_spots).length > 0
+                    overlaps_something = piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]}.intersect? illegal_spots
                     # then we can return immediately.
                     moves_prelim.append(move) if (!overlaps_something)
                     

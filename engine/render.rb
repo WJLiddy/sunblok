@@ -133,4 +133,4 @@ end
 =end
 
 #show game
-score = play_game(Greedy.new,Greedy.new, true, true)
+score = play_game(Greedy.new,Greedy.new, false, false)
