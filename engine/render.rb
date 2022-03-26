@@ -71,11 +71,11 @@ def play_game(white_ai, black_ai, render_game, clear_render)
             if (white_turn)
                 white_yield = true 
                 puts "White has yielded. Skip turn." if render_game
-                puts
+                puts if render_game
             else
                 black_yield = true 
                 puts "Black has yielded. Skip turn." if render_game
-                puts
+                puts if render_game
             end
             white_turn = !white_turn
             next
@@ -95,11 +95,11 @@ def play_game(white_ai, black_ai, render_game, clear_render)
             if (white_turn)
                 white_yield = true 
                 puts "White has yielded. Skip turn." if render_game
-                puts
+                puts if render_game
             else
                 black_yield = true 
                 puts "Black has yielded. Skip turn." if render_game
-                puts
+                puts if render_game
             end
             white_turn = !white_turn
             next
@@ -133,4 +133,6 @@ end
 =end
 
 #show game
-score = play_game(Greedy.new,Greedy.new, false, false)
+100.times do 
+    score = play_game(Greedy.new,Greedy.new, false, false)
+end

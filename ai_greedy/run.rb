@@ -25,8 +25,7 @@ class Greedy
         enumerate_moves(own,enemy)
     end
 
-    def enumerate_moves(own,enemy)
-        piece_list = get_piece_list()
+    def generate_legal_board_mount_points(own,enemy)
         # first, generate all diagonals where we can attach a piece.
         mount_points = diag(list_to_coords(own))
 
@@ -37,14 +36,40 @@ class Greedy
         illegal = adj(list_to_coords(own), true)
 
         # These are open spaces where we can mount a piece.
-        legal_board_mount_points = (open_mount_points - illegal)
+        (open_mount_points - illegal)
+    end
+
+    def to_bitwise(list)
+        num = 0
+        list.each do |l|
+            # 16 by 16 (borders x,y)
+            x = (l[0]+1)
+            y = 16 * (l[1] + 1)
+            num |= 1 << (y + x)
+        end
+        num
+    end
+
+    def enumerate_moves(own,enemy)
+        piece_list = get_piece_list()
+
+        # get all the places where we can add a piece.
+        legal_board_mount_points = generate_legal_board_mount_points(own, enemy)
 
         # these pieces are left.
         remaining_pieces = get_piece_list.keys - own.map{|m| m["name"]}
 
-        # as a quick check, we can ignore any locations covered by enemy, or own + adj.
+        # To check the move, make sure nothing is: covered by enemy, or own + adj squares, or out of bounds.
+        # if it's not any of these, it is a legal move.
         illegal_spots = adj(list_to_coords(own), true) + list_to_coords(enemy)
         
+        (-1..14).each do |y|
+            (-1..14).each do |x|
+                illegal_spots.append([x,y]) if OOB([[x,y]])
+            end
+        end
+
+        illegal_bitwise = to_bitwise(illegal_spots)
 
         moves_prelim = []
         # now, for each legal mount point. compare with each piece.
@@ -59,17 +84,17 @@ class Greedy
                         "rotation" => 0,
                         "position" => position
                     }
-                    # As an optimization, see if we overlapped something.
-
-                    overlaps_something = piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]}.intersect? illegal_spots
+                    # As an optimization, see if we overlapped something, or went out of bounds
+                    # if we didn't overlap, and we didn't go out of bounds, the move must be legal.            
+                    piece_pos = to_bitwise(piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]}) 
+                    overlaps_something = (piece_pos & illegal_bitwise) != 0
                     # then we can return immediately.
                     moves_prelim.append(move) if (!overlaps_something)
                     
                 end
             end
         end
-        moves_valid = moves_prelim.filter {|m| legal(m, own, enemy, true)}
-        return nil if (moves_valid.length == 0)
-        return moves_valid.max {|a,b| (piece_list[a["name"]].length) <=> (piece_list[b["name"]].length)}
+        return nil if (moves_prelim.length == 0)
+        return moves_prelim.max {|a,b| (piece_list[a["name"]].length) <=> (piece_list[b["name"]].length)}
     end
 end
