@@ -113,6 +113,7 @@ def play_game(white_ai, black_ai, render_game, clear_render)
             puts("White pieces left:\n" + white_pieces_left.to_s + " (" + score(white_pieces_left).to_s + ")") 
             puts("Black pieces left:\n" + black_pieces_left.to_s + " (" + score(black_pieces_left).to_s + ")" )
             puts
+            sleep(0.5)
         end
         white_turn = !white_turn
     end
@@ -132,4 +133,4 @@ end
 =end
 
 #show game
-score = play_game(Rand.new,Greedy.new, true, false)
+score = play_game(Greedy.new,Greedy.new, true, true)

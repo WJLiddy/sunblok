@@ -13,7 +13,6 @@ class Greedy
                 return ret
             else
                 # i am black
-                puts "black."
                 ret = 
                 {
                     "name" => "W",
@@ -21,7 +20,6 @@ class Greedy
                     "position" => [11,11]
                 }
                 return ret
-                puts "black."
             end
         end
         enumerate_moves(own,enemy)
@@ -44,19 +42,29 @@ class Greedy
         # these pieces are left.
         remaining_pieces = get_piece_list.keys - own.map{|m| m["name"]}
 
+        # as a quick check, we can ignore any locations covered by enemy, or own + adj.
+        illegal_spots = adj(list_to_coords(own), true) + list_to_coords(enemy)
+        
+
         moves_prelim = []
         # now, for each legal mount point. compare with each piece.
         remaining_pieces.each do |r|
             legal_board_mount_points.each do |m|
                 piece_list[r].each do |piece_mount_point|
                     # so we have a piece, and a mount point.
+                    position = [m[0] + -piece_mount_point[0], m[1] + -piece_mount_point[1]]
                     move = 
                     {
                         "name" => r,
                         "rotation" => 0,
-                        "position" => [m[0] + -piece_mount_point[0], m[1] + -piece_mount_point[1]]
+                        "position" => position
                     }
-                    moves_prelim.append(move)
+                    # As an optimization, see if we overlapped something.
+
+                    overlaps_something = (piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]} & illegal_spots).length > 0
+                    # then we can return immediately.
+                    moves_prelim.append(move) if (!overlaps_something)
+                    
                 end
             end
         end
