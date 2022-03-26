@@ -1,4 +1,18 @@
 class Greedy
+    @@cache = {}
+    def initialize
+        # preload the cache with every piece bitboard.
+        return if(@@cache.size() != 0)
+        piece_list = get_piece_list()
+        piece_list.keys.each do |k|
+            (-4..16).each do |y|
+                (-4..16).each do |x|
+                cachestr = x.to_s + "," + y.to_s + k
+                @@cache[cachestr] = to_bitwise(piece_list[k].map{|t| [x + t[0], y + t[1]]}) 
+                end
+            end
+        end
+    end
     def run(own,enemy)
         if(own.length == 0)
             # start with book move.
@@ -29,23 +43,22 @@ class Greedy
         # first, generate all diagonals where we can attach a piece.
         mount_points = diag(list_to_coords(own))
 
-        # disard any mount points that are covered by another piece, or out of bounds.
+        # disregard any mount points that are covered by another piece, or out of bounds.
         open_mount_points = (mount_points - list_to_coords(own + enemy)).filter{|f| !OOB([f])}
 
         # disard any mount points that are adjancent to a friendly piece.
-        illegal = adj(list_to_coords(own), true)
+        illegal = adj(list_to_coords(own), false)
 
         # These are open spaces where we can mount a piece.
         (open_mount_points - illegal)
     end
 
+    # expensive
     def to_bitwise(list)
         num = 0
         list.each do |l|
             # 16 by 16 (borders x,y)
-            x = (l[0]+1)
-            y = 16 * (l[1] + 1)
-            num |= 1 << (y + x)
+            num |= 1 << (((16 * (l[1] + 1))) + (l[0]+1))
         end
         num
     end
@@ -72,24 +85,33 @@ class Greedy
         illegal_bitwise = to_bitwise(illegal_spots)
 
         moves_prelim = []
-        # now, for each legal mount point. compare with each piece.
-        remaining_pieces.each do |r|
-            legal_board_mount_points.each do |m|
+        # for every mount point (this is optimized, can't change)
+        legal_board_mount_points.each do |m|
+
+            # for every piece left...
+            remaining_pieces.each do |r|
+                # if a bigger piece was already mounted here
+                # then we can mount a smaller piece for sure.
+                # if we put a part of the piece here, is it a legal move
                 piece_list[r].each do |piece_mount_point|
                     # so we have a piece, and a mount point.
                     position = [m[0] + -piece_mount_point[0], m[1] + -piece_mount_point[1]]
-                    move = 
-                    {
-                        "name" => r,
-                        "rotation" => 0,
-                        "position" => position
-                    }
-                    # As an optimization, see if we overlapped something, or went out of bounds
-                    # if we didn't overlap, and we didn't go out of bounds, the move must be legal.            
-                    piece_pos = to_bitwise(piece_list[move["name"]].map{|t| [position[0] + t[0], position[1] + t[1]]}) 
-                    overlaps_something = (piece_pos & illegal_bitwise) != 0
-                    # then we can return immediately.
-                    moves_prelim.append(move) if (!overlaps_something)
+                    # Make the string identifier
+                    cachestr = position[0].to_s + "," + position[1].to_s + r
+                    # Look up the bitstring for the piece in that location
+                    piece_pos = @@cache[cachestr]
+
+                    puts("ERROR!" + position.to_s) if piece_pos == nil
+                     # 0 means no overlap
+                    if ((piece_pos & illegal_bitwise) == 0)
+                        move = 
+                        {
+                            "name" => r,
+                            "rotation" => 0,
+                            "position" => position
+                        }
+                        moves_prelim.append(move)
+                    end
                     
                 end
             end

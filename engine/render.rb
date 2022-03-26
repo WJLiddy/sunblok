@@ -132,7 +132,7 @@ end
 end
 =end
 
-#show game
-100.times do 
+# with truffleruby: 50 games/s
+50.times do 
     score = play_game(Greedy.new,Greedy.new, false, false)
 end

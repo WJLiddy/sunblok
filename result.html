@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -682,7 +662,7 @@
   <body>
     <div style="display: inline-block;">
       <div id="titlebar">
-        Call tree for application <strong>/home/jack/.rbenv/versions/3.1.1/bin/ruby-prof </strong><br/> Generated on 2022-03-25 21:31:50 -0700
+        Call tree for application <strong>/home/jack/.rbenv/versions/3.1.1/bin/ruby-prof </strong><br/> Generated on 2022-03-26 01:01:20 -0700
         with options {:min_percent=>0, :sort_method=>nil}<br/>
       </div>
       <div id="commands">
@@ -712,7 +692,7 @@
       
         
         <div class="thread">
-          <span>Thread: 620, Fiber: 600 (100.00% ~ 3.423383928002295)</span>
+          <span>Thread: 620, Fiber: 600 (100.00% ~ 1.613926705999802)</span>
           <ul name="thread">
             
             <li class="color9" style="display:block">
@@ -725,59 +705,79 @@
 <ul>
 <li class="color9" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>99.91% (99.91%) Integer#times [1 calls, 28431 total]</span>
+<span>99.82% (99.82%) Integer#times [1 calls, 21791 total]</span>
 <ul>
 <li class="color9" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>99.91% (100.00%) <a href="file:///home/jack/Desktop/sunblok/engine/render.rb#31">Object#play_game</a> [10 calls, 10 total]</span>
+<span>90.39% (90.55%) <a href="file:///home/jack/Desktop/sunblok/engine/render.rb#31">Object#play_game</a> [10 calls, 10 total]</span>
 <ul>
-<li class="color8" style="display:block">
+<li class="color7" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>88.90% (88.98%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#2">Greedy#run</a> [330 calls, 330 total]</span>
+<span>73.39% (81.19%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#16">Greedy#run</a> [290 calls, 290 total]</span>
 <ul>
-<li class="color8" style="display:block">
+<li class="color7" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>88.88% (99.98%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#53">Greedy#enumerate_moves</a> [310 calls, 310 total]</span>
+<span>73.36% (99.97%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#66">Greedy#enumerate_moves</a> [270 calls, 270 total]</span>
 <ul>
-<li class="color6" style="display:block">
+<li class="color3" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>62.17% (69.95%) Array#each [310 calls, 128957 total]</span>
+<span>30.30% (41.30%) Array#each [270 calls, 35257 total]</span>
 <ul>
-<li class="color6" style="display:block">
+<li class="color3" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>62.14% (99.95%) Array#each [3330 calls, 128957 total]</span>
-<ul>
-<li class="color6" style="display:block">
-<a href="#" class="toggle minus" ></a>
-<span>61.67% (99.23%) Array#each [26200 calls, 128957 total]</span>
+<span>30.26% (99.88%) Array#each [1940 calls, 35257 total]</span>
 <ul>
 <li class="color2" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>29.47% (47.79%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#42">Greedy#to_bitwise</a> [96030 calls, 96340 total]</span>
-<ul>
-<li class="color2" style="display:block">
-<a href="#" class="toggle minus" ></a>
-<span>28.02% (95.07%) Array#each [96030 calls, 128957 total]</span>
+<span>29.53% (97.57%) Array#each [21980 calls, 35257 total]</span>
 <ul>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>3.74% (13.34%) Integer#+ [1173570 calls, 2928073 total]</span>
+<span>3.43% (11.63%) Array#[] [490020 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>3.16% (11.27%) Integer#&lt;&lt; [391190 calls, 453830 total]</span>
+<span>2.99% (10.14%) String#+ [245010 calls, 270173 total]</span>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>2.69% (9.60%) Array#[] [782380 calls, 4372274 total]</span>
+<span>1.83% (6.21%) <a href="file:///home/jack/Desktop/sunblok/<internal:numeric>#52">Integer#-@</a> [163340 calls, 163340 total]</span>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>2.26% (8.06%) Integer#| [391190 calls, 453830 total]</span>
+<span>1.64% (5.56%) Integer#to_s [163340 calls, 180098 total]</span>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.45% (5.18%) Integer#* [391190 calls, 453830 total]</span>
+<span>1.55% (5.25%) Integer#== [163340 calls, 163946 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (3.68%) BasicObject#== [7930 calls, 7953 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.15% (3.90%) Integer#+ [163340 calls, 945958 total]</span>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.05% (3.56%) Integer#&amp; [81670 calls, 81670 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.98% (3.33%) Hash#[] [81670 calls, 157268 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (0.37%) Array#append [11910 calls, 28650 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.23% (0.76%) Hash#[] [21980 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
@@ -785,851 +785,877 @@
 </li>
 <li class="color1" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>18.84% (30.55%) Array#map [96030 calls, 126632 total]</span>
+<span>17.19% (23.43%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#42">Greedy#generate_legal_board_mount_points</a> [270 calls, 270 total]</span>
 <ul>
 <li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>5.16% (27.40%) Array#[] [1564760 calls, 4372274 total]</span>
-</li>
+<a href="#" class="toggle plus" ></a>
+<span>4.90% (28.49%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [810 calls, 2410 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>4.87% (99.44%) Array#each [810 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>4.54% (93.26%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [7970 calls, 21790 total]</span>
+<ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>2.72% (14.41%) Integer#+ [782380 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.31% (2.13%) Array#[] [384120 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.10% (1.79%) <a href="file:///home/jack/Desktop/sunblok/<internal:numeric>#52">Integer#-@</a> [192060 calls, 192060 total]</span>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.07% (1.74%) BasicObject#!= [96030 calls, 96035 total]</span>
+<span>3.87% (85.17%) Array#map [7970 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.37% (34.39%) Integer#== [96030 calls, 96696 total]</span>
+<span>1.00% (25.77%) Array#[] [152080 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.51% (13.17%) Integer#+ [76040 calls, 945958 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.72% (1.17%) Integer#&amp; [96030 calls, 96030 total]</span>
+<span>0.09% (2.08%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [7970 calls, 22461 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.66% (1.07%) Integer#+ [192060 calls, 2928073 total]</span>
+<span>0.08% (1.81%) Hash#[] [7970 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.46% (0.74%) Hash#[] [96030 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.38% (0.62%) BasicObject#! [96030 calls, 115122 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.07% (0.12%) Array#append [13540 calls, 32760 total]</span>
+<span>0.06% (1.28%) Integer#times [7970 calls, 21791 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.16% (0.25%) Hash#[] [26200 calls, 177249 total]</span>
+<span>0.11% (2.36%) Array#+ [7970 calls, 21790 total]</span>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>3.75% (21.81%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#32">Object#diag</a> [270 calls, 520 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.36% (62.95%) Array#map [270 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.55% (23.18%) Array#[] [75680 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.47% (20.12%) Integer#+ [75680 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.31% (34.87%) Array#uniq [270 calls, 1330 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (22.98%) Array#hash [37840 calls, 328300 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.19% (14.72%) Array#eql? [13250 calls, 112460 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (1.89%) Array#flatten [270 calls, 1339 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>3.21% (18.67%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [270 calls, 810 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.81% (56.32%) Array#map [270 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.49% (27.31%) Array#[] [75680 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (14.17%) Integer#+ [37840 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.32% (41.12%) Array#uniq [270 calls, 1330 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (23.03%) Array#hash [37840 calls, 328300 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (15.11%) Array#eql? [13820 calls, 112460 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (2.14%) Array#flatten [270 calls, 1339 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.67% (15.52%) Array#filter [270 calls, 270 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.13% (80.01%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [15670 calls, 85060 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.85% (86.80%) Array#any? [15670 calls, 85887 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.39% (21.10%) Array#[] [55180 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (10.91%) Integer#&lt; [29880 calls, 199920 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.18% (9.65%) Integer#&gt; [25300 calls, 179146 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.12% (4.40%) BasicObject#! [15670 calls, 16582 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.62% (15.27%) Array#- [540 calls, 810 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.62% (23.56%) Array#hash [77080 calls, 328300 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.36% (13.78%) Array#eql? [25480 calls, 112460 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.03%) Array#+ [270 calls, 21790 total]</span>
 </li>
 </ul>
 </li>
 <li class="color1" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>11.07% (12.46%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#28">Greedy#generate_legal_board_mount_points</a> [310 calls, 310 total]</span>
+<span>11.33% (15.44%) Range#each [270 calls, 5008 total]</span>
 <ul>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>3.14% (28.32%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [930 calls, 2770 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>3.12% (99.34%) Array#each [930 calls, 128957 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.90% (93.21%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [10380 calls, 28430 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>2.46% (84.83%) Array#map [10380 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.66% (26.92%) Array#[] [196080 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.33% (13.40%) Integer#+ [98040 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.06% (2.19%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [10380 calls, 29140 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (1.70%) Hash#[] [10380 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.04% (1.28%) Integer#times [10380 calls, 28431 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.08% (2.59%) Array#+ [10380 calls, 28430 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.47% (22.30%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [310 calls, 930 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.28% (52.04%) Array#map [310 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.39% (30.15%) Array#[] [121100 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.16% (12.32%) Integer#+ [48440 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.13% (45.64%) Array#uniq [310 calls, 1530 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.24% (21.31%) Array#hash [60550 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.21% (18.46%) Array#eql? [29200 calls, 151180 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (1.97%) Array#flatten [310 calls, 1539 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.33% (21.02%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#32">Object#diag</a> [310 calls, 600 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.44% (61.69%) Array#map [310 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.33% (23.08%) Array#[] [96880 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.30% (21.20%) Integer#+ [96880 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.84% (35.99%) Array#uniq [310 calls, 1530 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.19% (22.88%) Array#hash [48440 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.12% (13.88%) Array#eql? [16350 calls, 151180 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (2.01%) Array#flatten [310 calls, 1539 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.65% (14.93%) Array#- [620 calls, 930 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.39% (23.85%) Array#hash [98810 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.22% (13.25%) Array#eql? [31270 calls, 151180 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>1.46% (13.17%) Array#filter [310 calls, 310 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>1.16% (79.70%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [18080 calls, 97750 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.00% (86.21%) Array#any? [18080 calls, 98697 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.21% (21.19%) Array#[] [61940 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.11% (11.32%) Integer#&lt; [34190 calls, 235050 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.09% (9.41%) Integer#&gt; [27750 calls, 210016 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.06% (4.34%) BasicObject#! [18080 calls, 115122 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.03%) Array#+ [310 calls, 28430 total]</span>
-</li>
-</ul>
-</li>
-<li class="color05" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>6.39% (7.19%) Range#each [310 calls, 5270 total]</span>
-<ul style="display:none">
-<li class="color05" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>6.35% (99.36%) Range#each [4960 calls, 5270 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>5.34% (84.13%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [79360 calls, 97750 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>4.63% (86.77%) Array#any? [79360 calls, 98697 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.99% (21.46%) Array#[] [288610 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.53% (11.44%) Integer#&lt; [153760 calls, 235050 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.47% (10.18%) Integer#&gt; [134850 calls, 210016 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.08% (1.22%) Array#append [18600 calls, 32760 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>4.52% (5.08%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#42">Greedy#to_bitwise</a> [310 calls, 96340 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>4.51% (99.84%) Array#each [310 calls, 128957 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.60% (13.40%) Integer#+ [187920 calls, 2928073 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.47% (10.53%) Integer#&lt;&lt; [62640 calls, 453830 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.46% (10.15%) Integer#| [62640 calls, 453830 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.44% (9.68%) Array#[] [125280 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.22% (4.89%) Integer#* [62640 calls, 453830 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>2.47% (2.78%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [310 calls, 930 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.29% (52.09%) Array#map [310 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.39% (30.07%) Array#[] [121100 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.16% (12.30%) Integer#+ [48440 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.12% (45.54%) Array#uniq [310 calls, 1530 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.24% (21.27%) Array#hash [60550 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.21% (18.53%) Array#eql? [29200 calls, 151180 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (2.05%) Array#flatten [310 calls, 1539 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>1.59% (1.79%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [620 calls, 2770 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>1.58% (99.20%) Array#each [620 calls, 128957 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle plus" ></a>
-<span>1.47% (93.37%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [5260 calls, 28430 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.25% (84.69%) Array#map [5260 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.34% (27.06%) Array#[] [99200 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.16% (13.16%) Integer#+ [49600 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.03% (2.19%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [5260 calls, 29140 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.03% (1.72%) Hash#[] [5260 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (1.32%) Integer#times [5260 calls, 28431 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.04% (2.40%) Array#+ [5260 calls, 28430 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.57% (0.64%) Array#max [290 calls, 290 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.11% (19.69%) Hash#[] [26500 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.09% (15.41%) Array#length [26500 calls, 27548 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (8.43%) Integer#&lt;=&gt; [13250 calls, 13251 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (0.02%) Array#- [310 calls, 930 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (0.02%) Array#map [310 calls, 126632 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (0.01%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [620 calls, 29140 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Hash#keys [310 calls, 332 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Array#length [310 calls, 27548 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Array#+ [310 calls, 28430 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Integer#== [310 calls, 96696 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Integer#== [350 calls, 96696 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Array#length [350 calls, 27548 total]</span>
-</li>
-</ul>
-</li>
-<li class="color05" style="display:block">
+<li class="color1" style="display:block">
 <a href="#" class="toggle minus" ></a>
-<span>10.92% (10.93%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#62">Object#legal</a> [310 calls, 310 total]</span>
+<span>11.26% (99.41%) Range#each [4320 calls, 5008 total]</span>
+<ul>
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.57% (85.00%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [69120 calls, 85060 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>8.37% (87.51%) Array#any? [69120 calls, 85887 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.76% (21.01%) Array#[] [251370 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.95% (11.32%) Integer#&lt; [133920 calls, 199920 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.82% (9.76%) Integer#&gt; [117450 calls, 179146 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.14% (1.20%) Array#append [16200 calls, 28650 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>6.97% (9.50%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#57">Greedy#to_bitwise</a> [270 calls, 8649 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>6.96% (99.86%) Array#each [270 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.00% (14.39%) Integer#+ [149640 calls, 945958 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.78% (11.21%) Integer#&lt;&lt; [49880 calls, 84719 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.74% (10.67%) Array#[] [99760 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.70% (10.01%) Integer#| [49880 calls, 84719 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.36% (5.16%) Integer#* [49880 calls, 84719 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>3.97% (5.42%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [270 calls, 810 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.12% (53.31%) Array#map [270 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.62% (29.14%) Array#[] [94600 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.25% (11.94%) Integer#+ [37840 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.77% (44.50%) Array#uniq [270 calls, 1330 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.37% (21.07%) Array#hash [47300 calls, 328300 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.34% (19.05%) Array#eql? [23260 calls, 112460 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.07% (1.86%) Array#flatten [270 calls, 1339 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.47% (3.36%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [540 calls, 2410 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.45% (99.12%) Array#each [540 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.28% (93.10%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [4010 calls, 21790 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.94% (85.10%) Array#map [4010 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.50% (25.99%) Array#[] [76400 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.26% (13.18%) Integer#+ [38200 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.05% (2.11%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [4010 calls, 22461 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (1.80%) Hash#[] [4010 calls, 157268 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (1.24%) Integer#times [4010 calls, 21791 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (2.58%) Array#+ [4010 calls, 21790 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.98% (1.34%) Array#max [250 calls, 250 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.20% (20.56%) Hash#[] [23320 calls, 157268 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.16% (16.20%) Array#length [23320 calls, 24288 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (9.04%) Integer#&lt;=&gt; [11660 calls, 11661 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (0.05%) Array#- [270 calls, 810 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (0.04%) Array#map [270 calls, 32061 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.01%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [540 calls, 22461 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.01%) Hash#keys [270 calls, 293 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.01%) Array#+ [270 calls, 21790 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Array#length [270 calls, 24288 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Integer#== [270 calls, 163946 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.01%) Integer#== [310 calls, 163946 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Array#length [310 calls, 24288 total]</span>
+</li>
+</ul>
+</li>
+<li class="color1" style="display:block">
+<a href="#" class="toggle minus" ></a>
+<span>16.90% (18.70%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#62">Object#legal</a> [270 calls, 270 total]</span>
 <ul>
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>3.62% (33.19%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [1220 calls, 2770 total]</span>
+<span>5.58% (33.00%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#18">Object#list_to_coords</a> [1060 calls, 2410 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>3.60% (99.35%) Array#each [1220 calls, 128957 total]</span>
+<span>5.54% (99.36%) Array#each [1060 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>3.36% (93.23%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [11860 calls, 28430 total]</span>
+<span>5.17% (93.39%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [9000 calls, 21790 total]</span>
 <ul style="display:none">
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>2.85% (84.77%) Array#map [11860 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.77% (27.16%) Array#[] [226440 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.38% (13.25%) Integer#+ [113220 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.08% (2.25%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [11860 calls, 29140 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.06% (1.69%) Hash#[] [11860 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.04% (1.27%) Integer#times [11860 calls, 28431 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.09% (2.52%) Array#+ [11860 calls, 28430 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>2.33% (21.35%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [310 calls, 930 total]</span>
+<span>4.41% (85.25%) Array#map [9000 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.21% (51.94%) Array#map [310 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.35% (28.99%) Array#[] [108100 calls, 4372274 total]</span>
+<span>1.13% (25.70%) Array#[] [173120 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.14% (11.94%) Integer#+ [43240 calls, 2928073 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:block">
-<a href="#" class="toggle empty" ></a>
-<span>1.06% (45.34%) Array#uniq [310 calls, 1530 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.22% (20.34%) Array#hash [54050 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.19% (17.85%) Array#eql? [25930 calls, 151180 total]</span>
+<span>0.57% (13.01%) Integer#+ [86560 calls, 945958 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.05% (2.21%) Array#flatten [310 calls, 1539 total]</span>
+<span>0.11% (2.13%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [9000 calls, 22461 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.09% (1.80%) Hash#[] [9000 calls, 157268 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (1.24%) Integer#times [9000 calls, 21791 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.13% (2.31%) Array#+ [9000 calls, 21790 total]</span>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>2.11% (19.28%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#32">Object#diag</a> [290 calls, 600 total]</span>
+<span>3.53% (20.86%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#42">Object#adj</a> [270 calls, 810 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.31% (62.37%) Array#map [290 calls, 126632 total]</span>
+<span>1.86% (52.65%) Array#map [270 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.30% (22.52%) Array#[] [86480 calls, 4372274 total]</span>
+<span>0.55% (29.39%) Array#[] [83100 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.26% (20.13%) Integer#+ [86480 calls, 2928073 total]</span>
+<span>0.22% (12.12%) Integer#+ [33240 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.59% (44.99%) Array#uniq [270 calls, 1330 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.33% (20.86%) Array#hash [41550 calls, 328300 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.30% (18.70%) Array#eql? [20360 calls, 112460 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.74% (35.21%) Array#uniq [290 calls, 1530 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.17% (23.17%) Array#hash [43240 calls, 436400 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.10% (13.97%) Array#eql? [14410 calls, 151180 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.04% (2.06%) Array#flatten [290 calls, 1539 total]</span>
+<span>0.07% (1.96%) Array#flatten [270 calls, 1339 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle plus" ></a>
-<span>1.40% (12.85%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [310 calls, 97750 total]</span>
+<span>3.32% (19.64%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#32">Object#diag</a> [250 calls, 520 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.40% (99.66%) Array#any? [310 calls, 98697 total]</span>
+<span>2.10% (63.26%) Array#map [250 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.32% (23.02%) Array#[] [94200 calls, 4372274 total]</span>
+<span>0.48% (22.84%) Array#[] [66480 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.16% (11.54%) Integer#&lt; [47100 calls, 235050 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.16% (11.53%) Integer#&gt; [47100 calls, 210016 total]</span>
-</li>
-</ul>
+<span>0.41% (19.71%) Integer#+ [66480 calls, 945958 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>1.09% (9.95%) Array#&amp; [930 calls, 930 total]</span>
+<span>1.15% (34.57%) Array#uniq [250 calls, 1330 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.29% (26.49%) Array#hash [70760 calls, 436400 total]</span>
+<span>0.26% (23.01%) Array#hash [33240 calls, 328300 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.04% (3.35%) Array#eql? [4820 calls, 151180 total]</span>
+<span>0.17% (14.54%) Array#eql? [11500 calls, 112460 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.25% (2.32%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [930 calls, 28430 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.20% (80.62%) Array#map [930 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (26.24%) Array#[] [15600 calls, 4372274 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.03% (12.62%) Integer#+ [7800 calls, 2928073 total]</span>
+<span>0.06% (1.83%) Array#flatten [250 calls, 1339 total]</span>
 </li>
 </ul>
 </li>
-<li class="color01" style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>2.30% (13.62%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#27">Object#OOB</a> [270 calls, 85060 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (2.90%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [930 calls, 29140 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (2.02%) Hash#[] [930 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.73%) Integer#times [930 calls, 28431 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (0.17%) Array#map [310 calls, 126632 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (0.06%) Array#include? [310 calls, 313 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (0.05%) Array#any? [930 calls, 98697 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.04%) Array#+ [310 calls, 28430 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.03%) Array#append [310 calls, 32760 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.02%) BasicObject#! [310 calls, 115122 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.02%) Integer#&gt; [310 calls, 210016 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.02%) Array#length [310 calls, 27548 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (0.01%) Hash#== [310 calls, 310 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.01% (0.01%) Array#delete [310 calls, 310 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Array#== [660 calls, 662 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Array#append [310 calls, 32760 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) <a href="file:///home/jack/Desktop/sunblok/engine/render.rb#27">Object#score</a> [20 calls, 20 total]</span>
+<span>2.29% (99.72%) Array#any? [270 calls, 85887 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (79.54%) Array#map [20 calls, 126632 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (19.87%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [70 calls, 29140 total]</span>
+<span>0.51% (22.17%) Array#[] [72240 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.20%) Hash#[] [70 calls, 177249 total]</span>
+<span>0.27% (11.77%) Integer#&lt; [36120 calls, 199920 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (11.46%) Array#length [70 calls, 27548 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (6.18%) Array#sum [20 calls, 20 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) BasicObject#! [680 calls, 115122 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Kernel#puts [20 calls, 20 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (72.69%) IO#puts [20 calls, 20 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (74.06%) IO#write [20 calls, 20 total]</span>
+<span>0.26% (11.23%) Integer#&gt; [36120 calls, 179146 total]</span>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>1.58% (9.36%) Array#&amp; [810 calls, 810 total]</span>
+<ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) BasicObject#== [20 calls, 23 total]</span>
+<span>0.43% (27.00%) Array#hash [53450 calls, 328300 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Hash#keys [20 calls, 332 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#30">Object#get_piece_list</a> [20 calls, 29140 total]</span>
+<span>0.07% (4.20%) Array#eql? [4790 calls, 112460 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Class#new [20 calls, 32 total]</span>
+<span>0.44% (2.63%) <a href="file:///home/jack/Desktop/sunblok/engine/game.rb#9">Object#piece_to_coord</a> [810 calls, 21790 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.77%) BasicObject#initialize [20 calls, 20 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.05% (0.05%) <a href="file:///home/jack/Desktop/sunblok/<internal:/home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>#36">Kernel#require</a> [1 calls, 3 total]</span>
+<span>0.37% (82.47%) Array#map [810 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.03% (56.22%) Kernel#gem_original_require [2 calls, 4 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (61.77%) <a href="file:///home/jack/Desktop/sunblok/<internal:/home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>#36">Kernel#require</a> [2 calls, 3 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.02% (96.32%) Kernel#gem_original_require [2 calls, 4 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.59%) Module#method_added [23 calls, 77 total]</span>
+<span>0.10% (26.27%) Array#[] [13800 calls, 1918870 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.56%) IO#set_encoding [4 calls, 16 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.16%) Module#private [1 calls, 1 total]</span>
+<span>0.05% (12.81%) Integer#+ [6900 calls, 945958 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.50%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1219">&lt;Module::Gem&gt;#find_unresolved_default_spec</a> [2 calls, 3 total]</span>
-<ul style="display:none">
+<span>0.01% (2.51%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [810 calls, 22461 total]</span>
+</li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (44.73%) Hash#[] [2 calls, 177249 total]</span>
+<span>0.01% (1.82%) Hash#[] [810 calls, 157268 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (1.40%) Integer#times [810 calls, 21791 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.40%) BasicObject#!= [2 calls, 96035 total]</span>
-<ul style="display:none">
+<span>0.02% (0.13%) Array#map [270 calls, 32061 total]</span>
+</li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (35.79%) BasicObject#== [2 calls, 23 total]</span>
+<span>0.01% (0.05%) Array#any? [810 calls, 85887 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.03%) Array#+ [270 calls, 21790 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.03%) Array#include? [270 calls, 273 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.03%) Array#append [270 calls, 28650 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.02%) Integer#&gt; [270 calls, 179146 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.02%) Array#length [270 calls, 24288 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.02%) BasicObject#! [270 calls, 16582 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.34%) Kernel#respond_to? [6 calls, 17 total]</span>
+<span>0.01% (0.01%) Array#delete [270 calls, 270 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.19%) Monitor#mon_owned? [4 calls, 6 total]</span>
+<span>0.01% (0.01%) <a href="file:///home/jack/Desktop/sunblok/engine/render.rb#27">Object#score</a> [20 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (86.74%) Array#map [20 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (19.79%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [110 calls, 22461 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [2 calls, 4 total]</span>
+<span>0.00% (15.15%) Hash#[] [110 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.12%) Monitor#enter [2 calls, 4 total]</span>
+<span>0.00% (11.59%) Array#length [110 calls, 24288 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (3.96%) Array#sum [20 calls, 20 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.01%) Hash#== [270 calls, 270 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.01%) BasicObject#! [620 calls, 16582 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.01% (0.01%) Array#== [580 calls, 582 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Array#append [270 calls, 28650 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Hash#keys [20 calls, 293 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [20 calls, 22461 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) BasicObject#== [20 calls, 7953 total]</span>
+</li>
+</ul>
+</li>
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.43% (9.45%) Class#new [20 calls, 32 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.43% (99.99%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#3">Greedy#initialize</a> [20 calls, 20 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.43% (99.98%) Array#each [1 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.43% (100.00%) Range#each [19 calls, 5008 total]</span>
+<ul style="display:none">
+<li class="color05" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>9.42% (99.93%) Range#each [399 calls, 5008 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle plus" ></a>
+<span>5.23% (55.54%) <a href="file:///home/jack/Desktop/sunblok/ai_greedy/run.rb#57">Greedy#to_bitwise</a> [8379 calls, 8649 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>4.98% (95.14%) Array#each [8379 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.68% (13.76%) Integer#+ [104517 calls, 945958 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.52% (10.52%) Integer#&lt;&lt; [34839 calls, 84719 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.51% (10.34%) Array#[] [69678 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.45% (8.95%) Integer#| [34839 calls, 84719 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.25% (5.11%) Integer#* [34839 calls, 84719 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:block">
+<a href="#" class="toggle empty" ></a>
+<span>2.67% (28.34%) Array#map [8379 calls, 32061 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.51% (19.21%) Array#[] [69678 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.44% (16.38%) Integer#+ [69678 calls, 945958 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.33% (3.55%) String#+ [25137 calls, 270173 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.22% (2.37%) Hash#[]= [8379 calls, 8386 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.18% (1.88%) Integer#to_s [16758 calls, 180098 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.08% (0.83%) Hash#[] [8379 calls, 157268 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.01%) BasicObject#!= [20 calls, 25 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (32.97%) Integer#== [20 calls, 163946 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Hash#size [20 calls, 20 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) <a href="file:///home/jack/Desktop/sunblok/engine/pieces.rb#34">Object#get_piece_list</a> [1 calls, 22461 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.00%) Hash#keys [1 calls, 293 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.11% (0.11%) <a href="file:///home/jack/Desktop/sunblok/<internal:/home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>#36">Kernel#require</a> [1 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.06% (56.77%) Kernel#gem_original_require [2 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.04% (57.57%) <a href="file:///home/jack/Desktop/sunblok/<internal:/home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/core_ext/kernel_require.rb>#36">Kernel#require</a> [2 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.03% (96.35%) Kernel#gem_original_require [2 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.65%) Module#method_added [23 calls, 79 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.55%) IO#set_encoding [4 calls, 16 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.17%) Module#private [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.48%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1219">&lt;Module::Gem&gt;#find_unresolved_default_spec</a> [2 calls, 3 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (42.77%) Hash#[] [2 calls, 157268 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.36%) BasicObject#!= [2 calls, 25 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (36.14%) BasicObject#== [2 calls, 7953 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.33%) Kernel#respond_to? [6 calls, 17 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.17%) Monitor#mon_owned? [4 calls, 6 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.17%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [2 calls, 4 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.13%) Monitor#enter [2 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -1637,45 +1663,45 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.06%) Hash#empty? [2 calls, 3 total]</span>
+<span>0.00% (0.07%) Hash#empty? [2 calls, 3 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.32%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#93">Colorize::ClassMethods#color_methods</a> [1 calls, 1 total]</span>
+<span>0.01% (11.30%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#93">Colorize::ClassMethods#color_methods</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (92.55%) Array#each [1 calls, 128957 total]</span>
+<span>0.01% (96.05%) Array#each [1 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (71.34%) Module#define_method [32 calls, 38 total]</span>
+<span>0.00% (38.66%) Module#define_method [32 calls, 38 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.52%) Module#method_added [32 calls, 77 total]</span>
+<span>0.00% (9.02%) Module#method_added [32 calls, 79 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.59%) Symbol#== [17 calls, 30 total]</span>
+<span>0.00% (13.11%) Symbol#== [17 calls, 30 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.01%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#28">Colorize::ClassMethods#colors</a> [1 calls, 1 total]</span>
+<span>0.00% (2.59%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#28">Colorize::ClassMethods#colors</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (33.54%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#61">Colorize::ClassMethods#color_codes</a> [1 calls, 1 total]</span>
+<span>0.00% (34.67%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#61">Colorize::ClassMethods#color_codes</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (27.92%) Hash#keys [1 calls, 332 total]</span>
+<span>0.00% (25.75%) Hash#keys [1 calls, 293 total]</span>
 </li>
 </ul>
 </li>
@@ -1687,35 +1713,35 @@
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (68.19%) Array#each [1 calls, 128957 total]</span>
+<span>0.00% (68.21%) Array#each [1 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (51.99%) Module#define_method [6 calls, 38 total]</span>
+<span>0.00% (51.58%) Module#define_method [6 calls, 38 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.24%) Module#method_added [6 calls, 77 total]</span>
+<span>0.00% (21.17%) Module#method_added [6 calls, 79 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.95%) Symbol#== [7 calls, 30 total]</span>
+<span>0.00% (10.01%) Symbol#== [7 calls, 30 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.33%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#35">Colorize::ClassMethods#modes</a> [1 calls, 1 total]</span>
+<span>0.00% (18.45%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#35">Colorize::ClassMethods#modes</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (29.94%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#78">Colorize::ClassMethods#mode_codes</a> [1 calls, 1 total]</span>
+<span>0.00% (30.62%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/colorize-0.8.1/lib/colorize/class_methods.rb#78">Colorize::ClassMethods#mode_codes</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (17.51%) Hash#keys [1 calls, 332 total]</span>
+<span>0.00% (17.91%) Hash#keys [1 calls, 293 total]</span>
 </li>
 </ul>
 </li>
@@ -1723,39 +1749,39 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.56%) &lt;Class::File&gt;#expand_path [2 calls, 4 total]</span>
+<span>0.00% (0.57%) &lt;Class::File&gt;#expand_path [2 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.55%) Kernel#extend [1 calls, 1 total]</span>
+<span>0.00% (0.48%) Kernel#extend [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (64.58%) Module#extend_object [1 calls, 1 total]</span>
+<span>0.00% (64.33%) Module#extend_object [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.28%) Module#extended [1 calls, 1 total]</span>
+<span>0.00% (12.13%) Module#extended [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.35%) Module#include [1 calls, 1 total]</span>
+<span>0.00% (0.34%) &lt;Class::File&gt;#dirname [2 calls, 6 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.34%) Module#include [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (57.61%) Module#append_features [1 calls, 1 total]</span>
+<span>0.00% (53.06%) Module#append_features [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (12.59%) Module#included [1 calls, 1 total]</span>
+<span>0.00% (14.64%) Module#included [1 calls, 1 total]</span>
 </li>
 </ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.33%) &lt;Class::File&gt;#dirname [2 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -1763,7 +1789,7 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.12%) Exception#initialize [1 calls, 1 total]</span>
+<span>0.00% (0.10%) Exception#initialize [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -1771,197 +1797,135 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.04%) Exception#exception [1 calls, 1 total]</span>
+<span>0.00% (0.05%) Exception#exception [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.02% (42.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#193">&lt;Module::Gem&gt;#try_activate</a> [1 calls, 1 total]</span>
+<span>0.05% (41.86%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#193">&lt;Module::Gem&gt;#try_activate</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.02% (73.81%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#994">&lt;Class::Gem::Specification&gt;#find_by_path</a> [1 calls, 1 total]</span>
+<span>0.03% (76.02%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#994">&lt;Class::Gem::Specification&gt;#find_by_path</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (68.06%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#186">Gem::StubSpecification#to_spec</a> [1 calls, 1 total]</span>
+<span>0.02% (67.08%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#186">Gem::StubSpecification#to_spec</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (98.11%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1109">&lt;Class::Gem::Specification&gt;#load</a> [1 calls, 1 total]</span>
+<span>0.02% (98.19%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1109">&lt;Class::Gem::Specification&gt;#load</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (86.63%) Kernel#eval [1 calls, 1 total]</span>
+<span>0.02% (83.70%) Kernel#eval [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (72.18%) Class#new [1 calls, 32 total]</span>
+<span>0.01% (71.69%) Class#new [1 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (99.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1974">Gem::Specification#initialize</a> [1 calls, 1 total]</span>
+<span>0.01% (99.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1974">Gem::Specification#initialize</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (47.82%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#559">Gem::Specification#add_development_dependency</a> [3 calls, 3 total]</span>
+<span>0.01% (50.18%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#559">Gem::Specification#add_development_dependency</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (98.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1474">Gem::Specification#add_dependency_with_type</a> [3 calls, 3 total]</span>
+<span>0.01% (98.37%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1474">Gem::Specification#add_dependency_with_type</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (84.22%) Class#new [3 calls, 32 total]</span>
+<span>0.01% (86.01%) Class#new [3 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (97.41%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#35">Gem::Dependency#initialize</a> [3 calls, 3 total]</span>
+<span>0.01% (97.54%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#35">Gem::Dependency#initialize</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (82.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [3 calls, 5 total]</span>
+<span>0.00% (82.89%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [3 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (88.67%) Class#new [3 calls, 32 total]</span>
+<span>0.00% (87.93%) Class#new [3 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (97.34%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [3 calls, 5 total]</span>
+<span>0.00% (97.44%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [3 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (86.30%) Array#map! [3 calls, 6 total]</span>
+<span>0.00% (88.68%) Array#map! [3 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (93.41%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [3 calls, 5 total]</span>
+<span>0.00% (86.14%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [3 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (67.76%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [3 calls, 5 total]</span>
+<span>0.00% (70.22%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [3 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (79.16%) Class#new [3 calls, 32 total]</span>
+<span>0.00% (79.76%) Class#new [3 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (92.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#215">Gem::Version#initialize</a> [3 calls, 3 total]</span>
+<span>0.00% (89.08%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#215">Gem::Version#initialize</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (52.70%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#175">&lt;Class::Gem::Version&gt;#correct?</a> [3 calls, 3 total]</span>
+<span>0.00% (51.36%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#175">&lt;Class::Gem::Version&gt;#correct?</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (21.08%) String#=~ [3 calls, 8 total]</span>
+<span>0.00% (20.10%) String#=~ [3 calls, 8 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.39%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/deprecate.rb#73">&lt;Module::Gem::Deprecate&gt;#skip</a> [3 calls, 3 total]</span>
+<span>0.00% (15.79%) BasicObject#! [6 calls, 16582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (12.05%) String#to_s [3 calls, 17 total]</span>
+<span>0.00% (15.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/deprecate.rb#73">&lt;Module::Gem::Deprecate&gt;#skip</a> [3 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.86%) BasicObject#! [6 calls, 115122 total]</span>
+<span>0.00% (5.19%) Kernel#nil? [3 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.96%) Kernel#nil? [3 calls, 5 total]</span>
+<span>0.00% (4.03%) String#to_s [3 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.45%) String#gsub [3 calls, 5 total]</span>
+<span>0.00% (7.35%) String#gsub [3 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.04%) String#=~ [3 calls, 8 total]</span>
+<span>0.00% (6.05%) String#=~ [3 calls, 8 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.05%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [3 calls, 10 total]</span>
+<span>0.00% (3.20%) String#strip [3 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.01%) Kernel#is_a? [3 calls, 6 total]</span>
+<span>0.00% (3.10%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [3 calls, 10 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.80%) String#strip [3 calls, 4 total]</span>
+<span>0.00% (2.87%) Kernel#is_a? [3 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.57%) String#to_s [3 calls, 17 total]</span>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (4.86%) Hash#[]= [3 calls, 7 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (3.14%) Hash#[] [3 calls, 177249 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.79%) Module#== [3 calls, 5 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (7.65%) String#-@ [3 calls, 3 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (7.10%) Regexp#=~ [3 calls, 9 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (2.02%) String#== [6 calls, 16 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.25%) Module#=== [3 calls, 37 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.23%) String#to_s [3 calls, 17 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.67%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [3 calls, 10 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (2.64%) Array#flatten [3 calls, 1539 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.99%) Array#empty? [3 calls, 17 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.91%) Array#compact! [3 calls, 5 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.87%) Array#uniq! [3 calls, 5 total]</span>
+<span>0.00% (2.61%) String#to_s [3 calls, 17 total]</span>
 </li>
 </ul>
 </li>
@@ -1969,15 +1933,77 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.05%) Module#=== [9 calls, 37 total]</span>
+<span>0.00% (4.96%) Hash#[]= [3 calls, 8386 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.84%) Array#length [3 calls, 27548 total]</span>
+<span>0.00% (3.17%) Hash#[] [3 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.79%) Integer#&gt; [3 calls, 210016 total]</span>
+<span>0.00% (1.72%) Module#== [3 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (9.67%) Regexp#=~ [3 calls, 9 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.93%) String#-@ [3 calls, 3 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.04%) String#== [6 calls, 16 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.33%) String#to_s [3 calls, 17 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.23%) Module#=== [3 calls, 37 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.54%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [3 calls, 10 total]</span>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.47%) Array#flatten [3 calls, 1339 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.87%) Array#empty? [3 calls, 17 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.86%) Array#compact! [3 calls, 5 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.85%) Array#uniq! [3 calls, 5 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.99%) Integer#&gt; [3 calls, 179146 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.97%) Module#=== [9 calls, 37 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.80%) Array#length [3 calls, 24288 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -1987,31 +2013,31 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.09%) Array#include? [3 calls, 313 total]</span>
+<span>0.00% (1.74%) Array#last [3 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.21%) Module#=== [6 calls, 37 total]</span>
+<span>0.00% (1.18%) Module#=== [6 calls, 37 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.02%) Integer#== [3 calls, 96696 total]</span>
+<span>0.00% (1.03%) Integer#== [3 calls, 163946 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.87%) Array#pop [3 calls, 3 total]</span>
+<span>0.00% (0.88%) Array#pop [3 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.85%) Array#first [3 calls, 3 total]</span>
+<span>0.00% (0.83%) Array#include? [3 calls, 273 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.66%) Array#last [3 calls, 4 total]</span>
+<span>0.00% (0.79%) Array#first [3 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.63%) Array#length [3 calls, 27548 total]</span>
+<span>0.00% (0.64%) Array#length [3 calls, 24288 total]</span>
 </li>
 </ul>
 </li>
@@ -2019,23 +2045,23 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.00%) Array#flatten [3 calls, 1539 total]</span>
+<span>0.00% (1.90%) Array#flatten [3 calls, 1339 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.80%) Array#&lt;&lt; [3 calls, 3 total]</span>
+<span>0.00% (1.26%) Kernel#respond_to? [3 calls, 17 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.33%) Kernel#respond_to? [3 calls, 17 total]</span>
+<span>0.00% (1.11%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [3 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.03%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [3 calls, 5 total]</span>
+<span>0.00% (0.72%) Array#&lt;&lt; [3 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.61%) Array#empty? [3 calls, 17 total]</span>
+<span>0.00% (0.62%) Array#empty? [3 calls, 17 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -2047,59 +2073,59 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.55%) Class#new [1 calls, 32 total]</span>
+<span>0.00% (7.24%) Class#new [1 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (93.20%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [1 calls, 5 total]</span>
+<span>0.00% (93.46%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (74.91%) Array#map! [1 calls, 6 total]</span>
+<span>0.00% (73.48%) Array#map! [1 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (84.78%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [1 calls, 5 total]</span>
+<span>0.00% (81.50%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (23.48%) Regexp#=~ [1 calls, 9 total]</span>
+<span>0.00% (25.93%) Regexp#=~ [1 calls, 9 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.98%) String#== [2 calls, 16 total]</span>
+<span>0.00% (21.81%) String#to_s [1 calls, 17 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.46%) String#to_s [1 calls, 17 total]</span>
+<span>0.00% (6.74%) String#== [2 calls, 16 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.44%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (3.30%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.01%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [1 calls, 10 total]</span>
+<span>0.00% (2.88%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [1 calls, 10 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.37%) Array#flatten [1 calls, 1539 total]</span>
+<span>0.00% (5.22%) Array#flatten [1 calls, 1339 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.65%) Array#uniq! [1 calls, 5 total]</span>
+<span>0.00% (3.97%) Array#uniq! [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.18%) Array#compact! [1 calls, 5 total]</span>
+<span>0.00% (3.25%) Array#compact! [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.54%) Array#empty? [1 calls, 17 total]</span>
+<span>0.00% (1.67%) Array#empty? [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
@@ -2107,101 +2133,91 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.51%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2614">Gem::Specification#version=</a> [1 calls, 1 total]</span>
+<span>0.00% (4.90%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2614">Gem::Specification#version=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (43.73%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#191">&lt;Class::Gem::Version&gt;#create</a> [1 calls, 1 total]</span>
+<span>0.00% (45.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#191">&lt;Class::Gem::Version&gt;#create</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (58.26%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [1 calls, 5 total]</span>
+<span>0.00% (54.65%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (16.33%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (16.80%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.12%) Module#== [1 calls, 5 total]</span>
+<span>0.00% (16.21%) Module#== [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.74%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (7.19%) Module#=== [1 calls, 37 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.98%) Kernel#nil? [1 calls, 5 total]</span>
+<span>0.00% (5.58%) Kernel#nil? [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (29.92%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#297">Gem::Version#prerelease?</a> [1 calls, 1 total]</span>
+<span>0.00% (28.97%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#297">Gem::Version#prerelease?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.57%) String#=~ [1 calls, 8 total]</span>
+<span>0.00% (19.16%) Kernel#instance_variable_defined? [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (21.57%) Kernel#instance_variable_defined? [1 calls, 5 total]</span>
+<span>0.00% (18.84%) String#=~ [1 calls, 8 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (12.83%) BasicObject#! [2 calls, 115122 total]</span>
+<span>0.00% (13.73%) BasicObject#! [2 calls, 16582 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2037">Gem::Specification#invalidate_memoized_attributes</a> [1 calls, 1 total]</span>
+<span>0.00% (6.03%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2037">Gem::Specification#invalidate_memoized_attributes</a> [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1682">Gem::Specification#date=</a> [1 calls, 1 total]</span>
+<span>0.00% (4.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1963">Gem::Specification#set_not_nil_attributes_to_default_values</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (25.96%) &lt;Class::Time&gt;#utc [1 calls, 1 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (23.04%) String#to_i [3 calls, 6 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (17.22%) Regexp#=~ [1 calls, 9 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (2.43%) Module#=== [1 calls, 37 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (4.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1963">Gem::Specification#set_not_nil_attributes_to_default_values</a> [1 calls, 1 total]</span>
+<span>0.00% (40.01%) Kernel#dup [3 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (40.30%) Kernel#dup [3 calls, 8 total]</span>
+<span>0.00% (62.67%) Kernel#initialize_dup [3 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (60.66%) Kernel#initialize_dup [3 calls, 8 total]</span>
+<span>0.00% (25.80%) Kernel#initialize_copy [2 calls, 2 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (25.00%) Array#initialize_copy [1 calls, 2 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (33.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1722">Gem::Specification#default_value</a> [3 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (28.03%) Kernel#initialize_copy [2 calls, 2 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (27.27%) Array#initialize_copy [1 calls, 2 total]</span>
+<span>0.00% (31.60%) Hash#[] [3 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
@@ -2209,39 +2225,49 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (36.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1722">Gem::Specification#default_value</a> [3 calls, 3 total]</span>
+<span>0.00% (4.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1682">Gem::Specification#date=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (40.89%) Hash#[] [3 calls, 177249 total]</span>
+<span>0.00% (42.54%) &lt;Class::Time&gt;#utc [1 calls, 1 total]</span>
 </li>
-</ul>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (18.20%) Regexp#=~ [1 calls, 9 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (12.15%) String#to_i [3 calls, 6 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.52%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.40%) BasicObject#!= [2 calls, 96035 total]</span>
+<span>0.00% (3.39%) BasicObject#!= [2 calls, 25 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (80.20%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#141">Gem::Platform#==</a> [2 calls, 2 total]</span>
+<span>0.00% (81.59%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#141">Gem::Platform#==</a> [2 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (22.07%) Array#== [1 calls, 662 total]</span>
+<span>0.00% (23.79%) Array#== [1 calls, 582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (17.64%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#129">Gem::Platform#to_a</a> [2 calls, 2 total]</span>
+<span>0.00% (16.76%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#129">Gem::Platform#to_a</a> [2 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (15.43%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [2 calls, 10 total]</span>
+<span>0.00% (16.23%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [2 calls, 10 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.69%) Module#=== [2 calls, 37 total]</span>
+<span>0.00% (8.77%) Module#=== [2 calls, 37 total]</span>
 </li>
 </ul>
 </li>
@@ -2249,27 +2275,27 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#691">Gem::Specification#required_rubygems_version=</a> [1 calls, 1 total]</span>
+<span>0.00% (3.13%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#691">Gem::Specification#required_rubygems_version=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (81.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [1 calls, 5 total]</span>
+<span>0.00% (81.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (27.53%) Array#length [1 calls, 27548 total]</span>
+<span>0.00% (29.62%) Integer#&gt; [1 calls, 179146 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.06%) Array#shift [1 calls, 5 total]</span>
+<span>0.00% (9.21%) Array#shift [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.28%) Integer#&gt; [1 calls, 210016 total]</span>
+<span>0.00% (7.71%) Array#length [1 calls, 24288 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.21%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (7.49%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
@@ -2277,19 +2303,19 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.31%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#280">Gem::Specification#authors=</a> [1 calls, 1 total]</span>
+<span>0.00% (2.14%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#280">Gem::Specification#authors=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (40.96%) Enumerable#grep [1 calls, 1 total]</span>
+<span>0.00% (61.12%) Enumerable#grep [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (54.62%) Array#each [1 calls, 128957 total]</span>
+<span>0.00% (30.15%) Array#each [1 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (23.58%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (30.38%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
@@ -2297,57 +2323,57 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.00%) Array#flatten [1 calls, 1539 total]</span>
+<span>0.00% (9.84%) Array#flatten [1 calls, 1339 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.95%) Kernel#Array [1 calls, 3 total]</span>
+<span>0.00% (5.26%) Kernel#Array [1 calls, 3 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.23%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#14">&lt;Class::Gem::Platform&gt;#local</a> [1 calls, 1 total]</span>
+<span>0.00% (2.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/platform.rb#14">&lt;Class::Gem::Platform&gt;#local</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (31.17%) String#=~ [1 calls, 8 total]</span>
+<span>0.00% (34.73%) String#=~ [1 calls, 8 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (11.85%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (13.08%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2371">Gem::Specification#summary=</a> [1 calls, 1 total]</span>
+<span>0.00% (1.78%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2371">Gem::Specification#summary=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (45.88%) String#gsub [2 calls, 5 total]</span>
+<span>0.00% (44.28%) String#gsub [2 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.26%) String#strip [1 calls, 4 total]</span>
+<span>0.00% (16.37%) String#strip [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.20%) String#to_s [1 calls, 17 total]</span>
+<span>0.00% (7.95%) String#to_s [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.80%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#32">Gem::BasicSpecification#initialize</a> [1 calls, 1 total]</span>
+<span>0.00% (1.72%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#32">Gem::BasicSpecification#initialize</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (69.12%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2079">Gem::Specification#internal_init</a> [1 calls, 1 total]</span>
+<span>0.00% (76.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2079">Gem::Specification#internal_init</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (42.65%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#204">Gem::BasicSpecification#internal_init</a> [1 calls, 1 total]</span>
+<span>0.00% (38.81%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#204">Gem::BasicSpecification#internal_init</a> [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
@@ -2355,19 +2381,19 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.76%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#643">Gem::Specification#installed_by_version=</a> [1 calls, 1 total]</span>
+<span>0.00% (1.28%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#643">Gem::Specification#installed_by_version=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (45.73%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [1 calls, 5 total]</span>
+<span>0.00% (60.00%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#205">&lt;Class::Gem::Version&gt;#new</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.71%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (23.67%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (15.77%) Module#== [1 calls, 5 total]</span>
+<span>0.00% (16.02%) Module#== [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
@@ -2375,79 +2401,79 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.96%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#378">Gem::Specification#licenses=</a> [1 calls, 1 total]</span>
+<span>0.00% (0.97%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#657">&lt;Module::Gem&gt;#platforms</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.58%) Kernel#Array [1 calls, 3 total]</span>
+<span>0.00% (16.00%) Array#empty? [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.93%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#657">&lt;Module::Gem&gt;#platforms</a> [1 calls, 1 total]</span>
+<span>0.00% (0.72%) Gem::Specification#rubygems_version= [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.67%) Gem::Specification#specification_version= [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.65%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1769">Gem::Specification#description=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.74%) Array#empty? [1 calls, 17 total]</span>
+<span>0.00% (20.72%) String#to_s [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#527">Gem::Specification#require_paths=</a> [1 calls, 1 total]</span>
+<span>0.00% (0.64%) Kernel#respond_to? [4 calls, 17 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.61%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#527">Gem::Specification#require_paths=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (45.35%) Kernel#Array [1 calls, 3 total]</span>
+<span>0.00% (43.98%) Kernel#Array [1 calls, 3 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.66%) Kernel#respond_to? [4 calls, 17 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.63%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1769">Gem::Specification#description=</a> [1 calls, 1 total]</span>
+<span>0.00% (0.48%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#378">Gem::Specification#licenses=</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.57%) String#to_s [1 calls, 17 total]</span>
+<span>0.00% (37.52%) Kernel#Array [1 calls, 3 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.39%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1958">Gem::Specification#set_nil_attributes_to_nil</a> [1 calls, 1 total]</span>
+<span>0.00% (0.38%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1958">Gem::Specification#set_nil_attributes_to_nil</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.38%) Array#last [1 calls, 4 total]</span>
+<span>0.00% (0.34%) Array#last [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.32%) Gem::Specification#name= [1 calls, 1 total]</span>
+<span>0.00% (0.31%) Gem::Specification#name= [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.32%) Kernel#block_given? [1 calls, 1 total]</span>
+<span>0.00% (0.29%) Kernel#block_given? [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.25%) Gem::Specification#email= [1 calls, 1 total]</span>
+<span>0.00% (0.22%) Gem::Specification#email= [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.23%) Gem::Specification#specification_version= [1 calls, 1 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.22%) Gem::Specification#rubygems_version= [1 calls, 1 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.20%) Gem::Specification#homepage= [1 calls, 1 total]</span>
+<span>0.00% (0.21%) Gem::Specification#homepage= [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
@@ -2457,43 +2483,43 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.86%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#782">&lt;Module::Gem&gt;#open_file</a> [1 calls, 1 total]</span>
+<span>0.00% (10.17%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#782">&lt;Module::Gem&gt;#open_file</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (94.00%) &lt;Class::IO&gt;#open [1 calls, 1 total]</span>
+<span>0.00% (62.71%) &lt;Class::IO&gt;#open [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (30.87%) IO#read [1 calls, 1 total]</span>
+<span>0.00% (31.27%) IO#read [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.17%) File#initialize [1 calls, 1 total]</span>
+<span>0.00% (23.51%) File#initialize [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.58%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1007">&lt;Module::Gem&gt;#java_platform?</a> [1 calls, 1 total]</span>
+<span>0.00% (7.60%) IO#close [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (7.24%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#995">&lt;Module::Gem&gt;#win_platform?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.07%) String#== [1 calls, 16 total]</span>
+<span>0.00% (26.94%) Kernel#nil? [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.17%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#995">&lt;Module::Gem&gt;#win_platform?</a> [1 calls, 1 total]</span>
+<span>0.00% (6.84%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1007">&lt;Module::Gem&gt;#java_platform?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (28.22%) Kernel#nil? [1 calls, 5 total]</span>
+<span>0.00% (16.60%) String#== [1 calls, 16 total]</span>
 </li>
 </ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (6.75%) IO#close [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -2501,7 +2527,7 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.18%) BasicObject#! [1 calls, 115122 total]</span>
+<span>0.00% (1.10%) BasicObject#! [1 calls, 16582 total]</span>
 </li>
 </ul>
 </li>
@@ -2509,37 +2535,37 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.28%) &lt;Class::File&gt;#expand_path [1 calls, 4 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.22%) Thread::Mutex#synchronize [2 calls, 2 total]</span>
+<span>0.00% (1.19%) Thread::Mutex#synchronize [2 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.15%) Hash#[]= [1 calls, 7 total]</span>
+<span>0.00% (17.84%) Hash#[]= [1 calls, 8386 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.48%) Hash#[] [2 calls, 177249 total]</span>
+<span>0.00% (15.90%) Hash#[] [2 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.69%) &lt;Class::File&gt;#file? [1 calls, 27 total]</span>
+<span>0.00% (1.14%) &lt;Class::File&gt;#expand_path [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.38%) Kernel#dup [1 calls, 8 total]</span>
+<span>0.00% (0.66%) &lt;Class::File&gt;#file? [1 calls, 27 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.39%) Kernel#dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (56.14%) Kernel#initialize_dup [1 calls, 8 total]</span>
+<span>0.00% (58.32%) Kernel#initialize_dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (45.84%) String#initialize_copy [1 calls, 4 total]</span>
+<span>0.00% (47.10%) String#initialize_copy [1 calls, 4 total]</span>
 </li>
 </ul>
 </li>
@@ -2547,47 +2573,47 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.31%) Kernel#binding [1 calls, 1 total]</span>
+<span>0.00% (0.27%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [2 calls, 19 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.29%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [2 calls, 19 total]</span>
+<span>0.00% (0.25%) Kernel#binding [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.18%) Gem::BasicSpecification#loaded_from= [1 calls, 1 total]</span>
+<span>0.00% (0.17%) Gem::BasicSpecification#loaded_from= [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.13%) String#to_s [1 calls, 17 total]</span>
+<span>0.00% (0.12%) String#to_s [1 calls, 17 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.10%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (0.11%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.53%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#154">Gem::StubSpecification#name</a> [1 calls, 1 total]</span>
+<span>0.00% (0.50%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#154">Gem::StubSpecification#name</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (29.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [1 calls, 22 total]</span>
+<span>0.00% (31.51%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [1 calls, 22 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.10%) Gem::StubSpecification::StubLine#name [1 calls, 1 total]</span>
+<span>0.00% (24.18%) Gem::StubSpecification::StubLine#name [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.26%) &lt;Module::Gem&gt;#loaded_specs [1 calls, 3 total]</span>
+<span>0.00% (0.27%) &lt;Module::Gem&gt;#loaded_specs [1 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.18%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (0.15%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -2597,175 +2623,159 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (30.11%) Enumerable#find [1 calls, 1 total]</span>
+<span>0.01% (31.26%) Enumerable#find [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (99.31%) Array#each [1 calls, 128957 total]</span>
+<span>0.01% (99.40%) Array#each [1 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (97.63%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#72">Gem::BasicSpecification#contains_requirable_file?</a> [7 calls, 7 total]</span>
+<span>0.01% (97.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#72">Gem::BasicSpecification#contains_requirable_file?</a> [7 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (89.08%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#332">Gem::BasicSpecification#have_file?</a> [7 calls, 7 total]</span>
+<span>0.01% (89.75%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#332">Gem::BasicSpecification#have_file?</a> [7 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (75.68%) Array#any? [9 calls, 98697 total]</span>
+<span>0.01% (77.82%) Array#any? [9 calls, 85887 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (54.25%) Array#any? [7 calls, 98697 total]</span>
+<span>0.00% (47.63%) Array#any? [7 calls, 85887 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (51.36%) &lt;Class::File&gt;#file? [20 calls, 27 total]</span>
+<span>0.00% (72.85%) &lt;Class::File&gt;#file? [20 calls, 27 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (30.55%) String#+ [20 calls, 26 total]</span>
+<span>0.00% (9.65%) String#+ [20 calls, 270173 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (11.22%) &lt;Class::File&gt;#join [7 calls, 12 total]</span>
+<span>0.00% (21.85%) &lt;Class::File&gt;#join [7 calls, 12 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.72%) &lt;Class::File&gt;#file? [6 calls, 27 total]</span>
+<span>0.00% (6.99%) &lt;Class::File&gt;#file? [6 calls, 27 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#179">Gem::StubSpecification#full_name</a> [7 calls, 7 total]</span>
+<span>0.00% (5.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#179">Gem::StubSpecification#full_name</a> [7 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (31.77%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [7 calls, 22 total]</span>
+<span>0.00% (29.79%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [7 calls, 22 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.62%) Gem::StubSpecification::StubLine#full_name [7 calls, 7 total]</span>
+<span>0.00% (16.91%) Gem::StubSpecification::StubLine#full_name [7 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.32%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [14 calls, 19 total]</span>
+<span>0.00% (4.56%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [14 calls, 19 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.52%) String#+ [6 calls, 26 total]</span>
+<span>0.00% (1.28%) String#+ [6 calls, 270173 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.27%) Gem::StubSpecification#gems_dir [7 calls, 7 total]</span>
+<span>0.00% (1.06%) Gem::StubSpecification#gems_dir [7 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (10.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#330">Gem::BasicSpecification#have_extensions?</a> [6 calls, 7 total]</span>
+<span>0.00% (9.63%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#330">Gem::BasicSpecification#have_extensions?</a> [6 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (48.50%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#168">Gem::StubSpecification#extensions</a> [6 calls, 7 total]</span>
+<span>0.00% (46.58%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#168">Gem::StubSpecification#extensions</a> [6 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (36.93%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [6 calls, 22 total]</span>
+<span>0.00% (34.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [6 calls, 22 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.98%) Gem::StubSpecification::StubLine#extensions [6 calls, 7 total]</span>
+<span>0.00% (18.29%) Gem::StubSpecification::StubLine#extensions [6 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.56%) BasicObject#! [6 calls, 115122 total]</span>
+<span>0.00% (7.61%) BasicObject#! [6 calls, 16582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.23%) Array#empty? [6 calls, 17 total]</span>
+<span>0.00% (7.33%) Array#empty? [6 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#139">Gem::StubSpecification#raw_require_paths</a> [7 calls, 7 total]</span>
+<span>0.00% (5.19%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#139">Gem::StubSpecification#raw_require_paths</a> [7 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (30.14%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [7 calls, 22 total]</span>
+<span>0.00% (29.72%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [7 calls, 22 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.83%) Gem::StubSpecification::StubLine#require_paths [7 calls, 7 total]</span>
+<span>0.00% (20.05%) Gem::StubSpecification::StubLine#require_paths [7 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.65%) &lt;Class::File&gt;#join [2 calls, 12 total]</span>
+<span>0.00% (1.48%) &lt;Class::File&gt;#join [2 calls, 12 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.71%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#97">Gem::BasicSpecification#extension_dir</a> [2 calls, 2 total]</span>
+<span>0.00% (0.58%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#97">Gem::BasicSpecification#extension_dir</a> [2 calls, 2 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.33%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#143">Gem::StubSpecification#missing_extensions?</a> [7 calls, 7 total]</span>
+<span>0.00% (3.98%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#143">Gem::StubSpecification#missing_extensions?</a> [7 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (26.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#93">Gem::StubSpecification#default_gem?</a> [7 calls, 7 total]</span>
+<span>0.00% (28.06%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#93">Gem::StubSpecification#default_gem?</a> [7 calls, 7 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#168">Gem::StubSpecification#extensions</a> [1 calls, 7 total]</span>
+<span>0.00% (19.36%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#168">Gem::StubSpecification#extensions</a> [1 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (30.14%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [1 calls, 22 total]</span>
+<span>0.00% (31.04%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/stub_specification.rb#108">Gem::StubSpecification#data</a> [1 calls, 22 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (20.56%) Gem::StubSpecification::StubLine#extensions [1 calls, 7 total]</span>
+<span>0.00% (22.03%) Gem::StubSpecification::StubLine#extensions [1 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.86%) Array#empty? [1 calls, 17 total]</span>
+<span>0.00% (3.55%) Array#empty? [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.59%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#944">&lt;Module::Gem&gt;#suffixes</a> [7 calls, 7 total]</span>
+<span>0.00% (1.51%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#944">&lt;Module::Gem&gt;#suffixes</a> [7 calls, 7 total]</span>
 </li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.43%) Kernel#dup [1 calls, 8 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (66.23%) Kernel#initialize_dup [1 calls, 8 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (59.64%) String#initialize_copy [1 calls, 4 total]</span>
 </li>
 </ul>
 </li>
@@ -2773,11 +2783,27 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.23%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#807">&lt;Class::Gem::Specification&gt;#stubs</a> [1 calls, 1 total]</span>
+<span>0.00% (0.38%) Kernel#dup [1 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (60.16%) Kernel#initialize_dup [1 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (52.51%) String#initialize_copy [1 calls, 4 total]</span>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.17%) Hash#[]= [1 calls, 7 total]</span>
+<span>0.00% (0.21%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#807">&lt;Class::Gem::Specification&gt;#stubs</a> [1 calls, 1 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.17%) Hash#[]= [1 calls, 8386 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -2785,95 +2811,89 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.09%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (0.08%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.01% (25.74%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1360">Gem::Specification#activate</a> [1 calls, 1 total]</span>
+<span>0.01% (23.49%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1360">Gem::Specification#activate</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (48.75%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2234">Gem::Specification#raise_if_conflicts</a> [1 calls, 1 total]</span>
+<span>0.01% (52.10%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2234">Gem::Specification#raise_if_conflicts</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (99.06%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1642">Gem::Specification#has_conflicts?</a> [1 calls, 1 total]</span>
+<span>0.01% (99.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1642">Gem::Specification#has_conflicts?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (63.62%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#241">Gem::Requirement#satisfied_by?</a> [1 calls, 1 total]</span>
+<span>0.00% (63.22%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#241">Gem::Requirement#satisfied_by?</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (94.45%) Array#all? [1 calls, 1 total]</span>
+<span>0.00% (96.28%) Array#all? [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (94.17%) Comparable#&gt;= [1 calls, 1 total]</span>
+<span>0.00% (92.56%) Comparable#&gt;= [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (97.87%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#347">Gem::Version#&lt;=&gt;</a> [1 calls, 1 total]</span>
+<span>0.00% (98.05%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#347">Gem::Version#&lt;=&gt;</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (64.75%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#376">Gem::Version#canonical_segments</a> [4 calls, 4 total]</span>
+<span>0.00% (64.94%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#376">Gem::Version#canonical_segments</a> [4 calls, 4 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (59.08%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#405">Gem::Version#_split_segments</a> [1 calls, 1 total]</span>
+<span>0.00% (60.04%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#405">Gem::Version#_split_segments</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (51.74%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#395">Gem::Version#_segments</a> [1 calls, 2 total]</span>
+<span>0.00% (50.19%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#395">Gem::Version#_segments</a> [1 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (45.68%) Array#map [1 calls, 126632 total]</span>
+<span>0.00% (55.87%) Array#map [1 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (38.17%) Regexp#=~ [3 calls, 9 total]</span>
+<span>0.00% (49.73%) Regexp#=~ [3 calls, 9 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.52%) String#to_i [3 calls, 6 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (38.47%) String#scan [1 calls, 1 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (4.68%) Kernel#freeze [1 calls, 1 total]</span>
+<span>0.00% (12.06%) String#to_i [3 calls, 6 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.64%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#322">Gem::Version#segments</a> [1 calls, 1 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (38.80%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#395">Gem::Version#_segments</a> [1 calls, 2 total]</span>
+<span>0.00% (28.10%) String#scan [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (37.09%) Kernel#dup [1 calls, 8 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (51.32%) Kernel#initialize_dup [1 calls, 8 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (44.20%) Array#initialize_copy [1 calls, 2 total]</span>
+<span>0.00% (4.78%) Kernel#freeze [1 calls, 1 total]</span>
 </li>
 </ul>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (20.85%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#322">Gem::Version#segments</a> [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (69.93%) Kernel#dup [1 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (78.76%) Kernel#initialize_dup [1 calls, 8 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (80.99%) Array#initialize_copy [1 calls, 2 total]</span>
 </li>
 </ul>
 </li>
@@ -2881,71 +2901,49 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (10.61%) Array#index [1 calls, 1 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (29.09%) Kernel#is_a? [3 calls, 6 total]</span>
+<span>0.00% (7.95%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#395">Gem::Version#_segments</a> [1 calls, 2 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.08%) Array#slice! [1 calls, 1 total]</span>
-</li>
+<span>0.00% (10.43%) Array#index [1 calls, 1 total]</span>
+<ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.16%) Array#size [1 calls, 4 total]</span>
+<span>0.00% (27.92%) Kernel#is_a? [3 calls, 6 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.72%) Array#map! [1 calls, 6 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (56.32%) Enumerable#drop_while [2 calls, 2 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (52.42%) Enumerator#each [2 calls, 2 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (55.51%) Array#reverse_each [2 calls, 4 total]</span>
-<ul style="display:none">
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (20.00%) Integer#== [1 calls, 96696 total]</span>
+<span>0.00% (4.11%) Array#slice! [1 calls, 1 total]</span>
 </li>
-</ul>
-</li>
-</ul>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.46%) Array#size [1 calls, 4 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (17.88%) Array#reverse_each [2 calls, 4 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (7.95%) Array#reverse [2 calls, 2 total]</span>
-</li>
-</ul>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (9.67%) Enumerable#reduce [1 calls, 1 total]</span>
+<span>0.00% (24.13%) Array#map! [1 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (80.25%) Array#each [1 calls, 128957 total]</span>
+<span>0.00% (56.45%) Enumerable#drop_while [2 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (62.17%) Array#concat [1 calls, 1 total]</span>
+<span>0.00% (76.62%) Enumerator#each [2 calls, 2 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (42.22%) Array#reverse_each [2 calls, 4 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (20.39%) Integer#== [1 calls, 163946 total]</span>
 </li>
 </ul>
 </li>
@@ -2955,19 +2953,47 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.31%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#391">Gem::Version#_version</a> [1 calls, 1 total]</span>
+<span>0.00% (17.35%) Array#reverse_each [2 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.10%) Integer#+ [2 calls, 2928073 total]</span>
+<span>0.00% (8.05%) Array#reverse [2 calls, 2 total]</span>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.72%) Array#[] [4 calls, 4372274 total]</span>
+<span>0.00% (6.03%) Enumerable#reduce [1 calls, 1 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (66.86%) Array#each [1 calls, 35257 total]</span>
+<ul style="display:none">
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (40.05%) Array#concat [1 calls, 1 total]</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.54%) Module#=== [5 calls, 37 total]</span>
+<span>0.00% (3.00%) Integer#&lt;=&gt; [1 calls, 11661 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.77%) Integer#&gt; [1 calls, 179146 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (2.05%) Array#[] [4 calls, 1918870 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (1.62%) Module#=== [5 calls, 37 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -2975,31 +3001,31 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.05%) Integer#- [1 calls, 1 total]</span>
+<span>0.00% (1.26%) Integer#+ [2 calls, 945958 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.03%) Integer#&lt;=&gt; [1 calls, 13251 total]</span>
+<span>0.00% (1.19%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#391">Gem::Version#_version</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.98%) Integer#== [2 calls, 96696 total]</span>
+<span>0.00% (1.12%) Integer#- [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.81%) Array#== [1 calls, 662 total]</span>
+<span>0.00% (1.03%) Integer#== [2 calls, 163946 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.70%) Array#size [2 calls, 4 total]</span>
+<span>0.00% (0.82%) Array#== [1 calls, 582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.59%) Integer#&gt; [1 calls, 210016 total]</span>
+<span>0.00% (0.79%) Array#size [2 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.52%) String#== [1 calls, 16 total]</span>
+<span>0.00% (0.51%) String#== [1 calls, 16 total]</span>
 </li>
 </ul>
 </li>
@@ -3007,83 +3033,83 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.67%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (0.71%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.22%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (0.83%) Gem::Requirement#requirements [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.82%) Gem::Requirement#requirements [1 calls, 1 total]</span>
+<span>0.00% (0.48%) Module#=== [1 calls, 37 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (25.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#822">&lt;Module::Gem&gt;#env_requirement</a> [1 calls, 1 total]</span>
+<span>0.00% (26.30%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#822">&lt;Module::Gem&gt;#env_requirement</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (74.31%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [1 calls, 5 total]</span>
+<span>0.00% (71.29%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#54">&lt;Class::Gem::Requirement&gt;#create</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (62.14%) Class#new [1 calls, 32 total]</span>
+<span>0.00% (62.10%) Class#new [1 calls, 32 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (92.13%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [1 calls, 5 total]</span>
+<span>0.00% (93.48%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#130">Gem::Requirement#initialize</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (68.06%) Array#map! [1 calls, 6 total]</span>
+<span>0.00% (69.03%) Array#map! [1 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (63.11%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [1 calls, 5 total]</span>
+<span>0.00% (75.63%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/requirement.rb#102">&lt;Class::Gem::Requirement&gt;#parse</a> [1 calls, 5 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (33.20%) Regexp#=~ [1 calls, 9 total]</span>
+<span>0.00% (24.60%) Module#=== [1 calls, 37 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (13.07%) String#== [2 calls, 16 total]</span>
+<span>0.00% (24.56%) Regexp#=~ [1 calls, 9 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.10%) String#to_s [1 calls, 17 total]</span>
+<span>0.00% (10.39%) String#== [2 calls, 16 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.45%) Module#=== [1 calls, 37 total]</span>
+<span>0.00% (6.24%) String#to_s [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.19%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [1 calls, 10 total]</span>
+<span>0.00% (7.21%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#18">Kernel#class</a> [1 calls, 10 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.05%) Array#flatten [1 calls, 1539 total]</span>
+<span>0.00% (7.70%) Array#flatten [1 calls, 1339 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.39%) Array#compact! [1 calls, 5 total]</span>
+<span>0.00% (3.28%) Array#compact! [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.06%) Array#uniq! [1 calls, 5 total]</span>
+<span>0.00% (3.05%) Array#uniq! [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.65%) Array#empty? [1 calls, 17 total]</span>
+<span>0.00% (2.46%) Array#empty? [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
@@ -3091,67 +3117,67 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.91%) Array#shift [1 calls, 5 total]</span>
+<span>0.00% (9.52%) String#=== [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.98%) String#=== [1 calls, 1 total]</span>
+<span>0.00% (3.25%) Module#=== [3 calls, 37 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.38%) Module#=== [3 calls, 37 total]</span>
+<span>0.00% (2.69%) Kernel#respond_to? [1 calls, 17 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.86%) Kernel#respond_to? [1 calls, 17 total]</span>
+<span>0.00% (2.53%) String#to_str [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.52%) String#to_str [1 calls, 1 total]</span>
+<span>0.00% (2.02%) Array#shift [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.76%) Integer#&gt; [1 calls, 210016 total]</span>
+<span>0.00% (1.83%) Integer#&gt; [1 calls, 179146 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.62%) Array#length [1 calls, 27548 total]</span>
+<span>0.00% (1.65%) Array#length [1 calls, 24288 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.97%) #&lt;Class:0x00007f6f01d59608&gt;#[] [1 calls, 1 total]</span>
+<span>0.00% (3.83%) #&lt;Class:0x00007f272ab39608&gt;#[] [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.79%) String#upcase [1 calls, 1 total]</span>
+<span>0.00% (2.52%) String#upcase [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.73%) Hash#[]= [1 calls, 7 total]</span>
+<span>0.00% (2.50%) Hash#[]= [1 calls, 8386 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.47%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (1.25%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.28%) Array#any? [1 calls, 98697 total]</span>
+<span>0.00% (6.61%) Array#any? [1 calls, 85887 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (66.47%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#165">Gem::Dependency#runtime?</a> [3 calls, 6 total]</span>
+<span>0.00% (66.24%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#165">Gem::Dependency#runtime?</a> [3 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (16.58%) Symbol#== [3 calls, 30 total]</span>
+<span>0.00% (16.57%) BasicObject#! [3 calls, 16582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (15.43%) BasicObject#! [3 calls, 115122 total]</span>
+<span>0.00% (16.41%) Symbol#== [3 calls, 30 total]</span>
 </li>
 </ul>
 </li>
@@ -3159,11 +3185,11 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.54%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [1 calls, 5 total]</span>
+<span>0.00% (0.62%) Gem::Specification#version [1 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.51%) Gem::Specification#version [1 calls, 2 total]</span>
+<span>0.00% (0.56%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -3175,47 +3201,47 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (36.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1496">Gem::Specification#add_self_to_load_path</a> [1 calls, 1 total]</span>
+<span>0.00% (38.10%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1496">Gem::Specification#add_self_to_load_path</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (70.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#145">Gem::BasicSpecification#full_require_paths</a> [1 calls, 1 total]</span>
+<span>0.00% (70.96%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#145">Gem::BasicSpecification#full_require_paths</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (88.86%) Array#map [1 calls, 126632 total]</span>
+<span>0.00% (87.58%) Array#map [1 calls, 32061 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (92.58%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#122">Gem::BasicSpecification#full_gem_path</a> [1 calls, 1 total]</span>
+<span>0.00% (92.79%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#122">Gem::BasicSpecification#full_gem_path</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (97.55%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#110">Gem::BasicSpecification#find_full_gem_path</a> [1 calls, 1 total]</span>
+<span>0.00% (97.78%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#110">Gem::BasicSpecification#find_full_gem_path</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (55.55%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1897">Gem::Specification#full_name</a> [1 calls, 1 total]</span>
+<span>0.00% (54.81%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1897">Gem::Specification#full_name</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (95.42%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#133">Gem::BasicSpecification#full_name</a> [1 calls, 1 total]</span>
+<span>0.00% (95.46%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#133">Gem::BasicSpecification#full_name</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (56.69%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#166">Gem::Version#to_s</a> [1 calls, 1 total]</span>
+<span>0.00% (11.61%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/version.rb#166">Gem::Version#to_s</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (93.00%) Kernel#dup [1 calls, 8 total]</span>
+<span>0.00% (63.57%) Kernel#dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.60%) Kernel#initialize_dup [1 calls, 8 total]</span>
+<span>0.00% (57.23%) Kernel#initialize_dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (41.33%) String#initialize_copy [1 calls, 4 total]</span>
+<span>0.00% (44.86%) String#initialize_copy [1 calls, 4 total]</span>
 </li>
 </ul>
 </li>
@@ -3225,15 +3251,23 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (10.51%) Kernel#dup [1 calls, 8 total]</span>
+<span>0.00% (9.80%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (7.23%) String#== [1 calls, 16 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (5.82%) Kernel#dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (27.91%) Kernel#initialize_dup [1 calls, 8 total]</span>
+<span>0.00% (53.33%) Kernel#initialize_dup [1 calls, 8 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (42.56%) String#initialize_copy [1 calls, 4 total]</span>
+<span>0.00% (42.60%) String#initialize_copy [1 calls, 4 total]</span>
 </li>
 </ul>
 </li>
@@ -3241,23 +3275,15 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.85%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
+<span>0.00% (2.54%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2176">Gem::Specification#platform</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.85%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2176">Gem::Specification#platform</a> [1 calls, 1 total]</span>
+<span>0.00% (1.39%) Gem::Specification#version [1 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.89%) String#== [1 calls, 16 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.33%) Gem::Specification#name [1 calls, 5 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (1.29%) Gem::Specification#version [1 calls, 2 total]</span>
+<span>0.00% (1.39%) Gem::Specification#name [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
@@ -3265,61 +3291,61 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (25.43%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1908">Gem::Specification#gems_dir</a> [1 calls, 1 total]</span>
+<span>0.00% (26.27%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1908">Gem::Specification#gems_dir</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (74.40%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2024">Gem::Specification#base_dir</a> [1 calls, 1 total]</span>
+<span>0.00% (73.72%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2024">Gem::Specification#base_dir</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (38.55%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#89">Gem::BasicSpecification#default_gem?</a> [1 calls, 2 total]</span>
+<span>0.00% (52.15%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#89">Gem::BasicSpecification#default_gem?</a> [1 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (27.39%) &lt;Class::File&gt;#dirname [1 calls, 6 total]</span>
+<span>0.00% (19.47%) &lt;Class::File&gt;#dirname [1 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.84%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/defaults.rb#61">&lt;Module::Gem&gt;#default_specifications_dir</a> [1 calls, 2 total]</span>
+<span>0.00% (10.32%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/defaults.rb#61">&lt;Module::Gem&gt;#default_specifications_dir</a> [1 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (12.55%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
+<span>0.00% (9.84%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.73%) String#== [1 calls, 16 total]</span>
+<span>0.00% (7.09%) String#== [1 calls, 16 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (16.34%) &lt;Class::File&gt;#dirname [2 calls, 6 total]</span>
+<span>0.00% (17.25%) &lt;Class::File&gt;#dirname [2 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.54%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
+<span>0.00% (6.35%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (14.23%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
+<span>0.00% (15.35%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.11%) &lt;Class::File&gt;#expand_path [1 calls, 4 total]</span>
+<span>0.00% (7.86%) &lt;Class::File&gt;#expand_path [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.80%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
+<span>0.00% (3.28%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.87%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
+<span>0.00% (1.96%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
 </li>
 </ul>
 </li>
@@ -3327,57 +3353,57 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.45%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
+<span>0.00% (2.36%) &lt;Class::File&gt;#join [1 calls, 12 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.27%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
+<span>0.00% (1.37%) <a href="file:///home/jack/Desktop/sunblok/<internal:kernel>#89">Kernel#tap</a> [1 calls, 19 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.04%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#330">Gem::BasicSpecification#have_extensions?</a> [1 calls, 7 total]</span>
+<span>0.00% (4.98%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#330">Gem::BasicSpecification#have_extensions?</a> [1 calls, 7 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.84%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#610">Gem::Specification#extensions</a> [1 calls, 1 total]</span>
+<span>0.00% (24.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#610">Gem::Specification#extensions</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.06%) BasicObject#! [1 calls, 115122 total]</span>
+<span>0.00% (11.25%) BasicObject#! [1 calls, 16582 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.66%) Array#empty? [1 calls, 17 total]</span>
+<span>0.00% (10.69%) Array#empty? [1 calls, 17 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (1.09%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2667">Gem::Specification#raw_require_paths</a> [1 calls, 1 total]</span>
+<span>0.00% (3.55%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2667">Gem::Specification#raw_require_paths</a> [1 calls, 1 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (17.39%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#594">&lt;Module::Gem&gt;#add_to_load_path</a> [1 calls, 1 total]</span>
+<span>0.00% (17.28%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#594">&lt;Module::Gem&gt;#add_to_load_path</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (49.99%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#573">&lt;Module::Gem&gt;#load_path_insert_index</a> [1 calls, 1 total]</span>
+<span>0.00% (51.43%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#573">&lt;Module::Gem&gt;#load_path_insert_index</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (64.13%) Enumerable#each_with_index [1 calls, 1 total]</span>
+<span>0.00% (84.18%) Enumerable#each_with_index [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (80.08%) Array#each [1 calls, 128957 total]</span>
+<span>0.00% (64.70%) Array#each [1 calls, 35257 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (29.71%) Kernel#instance_variable_defined? [4 calls, 5 total]</span>
+<span>0.00% (30.91%) Kernel#instance_variable_defined? [4 calls, 5 total]</span>
 </li>
 </ul>
 </li>
@@ -3387,41 +3413,41 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (8.64%) Array#insert [1 calls, 1 total]</span>
+<span>0.00% (9.03%) Array#insert [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (5.84%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#587">&lt;Module::Gem&gt;#activated_gem_paths</a> [1 calls, 1 total]</span>
+<span>0.00% (5.26%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#587">&lt;Module::Gem&gt;#activated_gem_paths</a> [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.61%) Array#size [1 calls, 4 total]</span>
+<span>0.00% (2.80%) Array#size [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.37%) Integer#+ [1 calls, 2928073 total]</span>
+<span>0.00% (2.31%) Integer#+ [1 calls, 945958 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (9.10%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#89">Gem::BasicSpecification#default_gem?</a> [1 calls, 2 total]</span>
+<span>0.00% (7.41%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/basic_specification.rb#89">Gem::BasicSpecification#default_gem?</a> [1 calls, 2 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (28.85%) &lt;Class::File&gt;#dirname [1 calls, 6 total]</span>
+<span>0.00% (36.14%) &lt;Class::File&gt;#dirname [1 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (21.45%) String#== [1 calls, 16 total]</span>
+<span>0.00% (15.35%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/defaults.rb#61">&lt;Module::Gem&gt;#default_specifications_dir</a> [1 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (12.99%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/defaults.rb#61">&lt;Module::Gem&gt;#default_specifications_dir</a> [1 calls, 2 total]</span>
+<span>0.00% (8.43%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.66%) Gem::BasicSpecification#loaded_from [2 calls, 7 total]</span>
+<span>0.00% (5.87%) String#== [1 calls, 16 total]</span>
 </li>
 </ul>
 </li>
@@ -3429,27 +3455,27 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (6.23%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1384">Gem::Specification#activate_dependencies</a> [1 calls, 1 total]</span>
+<span>0.00% (6.50%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1384">Gem::Specification#activate_dependencies</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (40.71%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2308">Gem::Specification#runtime_dependencies</a> [1 calls, 1 total]</span>
+<span>0.00% (63.96%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#2308">Gem::Specification#runtime_dependencies</a> [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (72.95%) Array#select [1 calls, 1 total]</span>
+<span>0.00% (51.89%) Array#select [1 calls, 1 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (64.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#165">Gem::Dependency#runtime?</a> [3 calls, 6 total]</span>
+<span>0.00% (63.91%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/dependency.rb#165">Gem::Dependency#runtime?</a> [3 calls, 6 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (19.87%) Symbol#== [3 calls, 30 total]</span>
+<span>0.00% (19.03%) Symbol#== [3 calls, 30 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (18.44%) BasicObject#! [3 calls, 115122 total]</span>
+<span>0.00% (18.74%) BasicObject#! [3 calls, 16582 total]</span>
 </li>
 </ul>
 </li>
@@ -3457,43 +3483,43 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (7.80%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [1 calls, 5 total]</span>
+<span>0.00% (5.48%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1732">Gem::Specification#dependencies</a> [1 calls, 5 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (22.06%) Hash#delete [1 calls, 1 total]</span>
+<span>0.00% (6.73%) Hash#delete [1 calls, 1 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (4.16%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [1 calls, 4 total]</span>
+<span>0.00% (3.89%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (3.14%) Gem::Specification#name [1 calls, 5 total]</span>
+<span>0.00% (3.15%) Gem::Specification#name [1 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (2.07%) Array#each [1 calls, 128957 total]</span>
+<span>0.00% (2.23%) Array#each [1 calls, 35257 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.41%) Hash#[]= [1 calls, 7 total]</span>
+<span>0.00% (0.36%) Hash#[]= [1 calls, 8386 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.31%) Gem::Specification#name [2 calls, 5 total]</span>
+<span>0.00% (0.35%) Gem::Specification#name [2 calls, 5 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.30%) &lt;Module::Gem&gt;#loaded_specs [2 calls, 3 total]</span>
+<span>0.00% (0.31%) &lt;Module::Gem&gt;#loaded_specs [2 calls, 3 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.19%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (0.20%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
@@ -3505,11 +3531,11 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.24%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1219">&lt;Module::Gem&gt;#find_unresolved_default_spec</a> [1 calls, 3 total]</span>
+<span>0.00% (0.22%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems.rb#1219">&lt;Module::Gem&gt;#find_unresolved_default_spec</a> [1 calls, 3 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (24.34%) Hash#[] [1 calls, 177249 total]</span>
+<span>0.00% (23.13%) Hash#[] [1 calls, 157268 total]</span>
 </li>
 </ul>
 </li>
@@ -3519,15 +3545,7 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.07%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [1 calls, 4 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.06%) Module#=== [1 calls, 37 total]</span>
-</li>
-<li class="color01" style="display:none">
-<a href="#" class="toggle empty" ></a>
-<span>0.00% (0.06%) Monitor#enter [2 calls, 4 total]</span>
+<span>0.00% (0.06%) <a href="file:///home/jack/.rbenv/versions/3.1.1/lib/ruby/3.1.0/rubygems/specification.rb#1253">&lt;Class::Gem::Specification&gt;#unresolved_deps</a> [1 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -3535,21 +3553,25 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.06%) BasicObject#!= [1 calls, 96035 total]</span>
+<span>0.00% (0.06%) Module#=== [1 calls, 37 total]</span>
+</li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.05%) BasicObject#!= [1 calls, 25 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (28.11%) BasicObject#== [1 calls, 23 total]</span>
+<span>0.00% (27.99%) BasicObject#== [1 calls, 7953 total]</span>
 </li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.05%) Monitor#mon_owned? [2 calls, 6 total]</span>
+<span>0.00% (0.05%) Monitor#enter [2 calls, 4 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.04%) String#== [1 calls, 16 total]</span>
+<span>0.00% (0.05%) Monitor#mon_owned? [2 calls, 6 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
@@ -3559,23 +3581,27 @@
 <a href="#" class="toggle empty" ></a>
 <span>0.00% (0.03%) Hash#empty? [1 calls, 3 total]</span>
 </li>
+<li class="color01" style="display:none">
+<a href="#" class="toggle empty" ></a>
+<span>0.00% (0.03%) String#== [1 calls, 16 total]</span>
+</li>
 </ul>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.02% (0.02%) Kernel#require_relative [4 calls, 4 total]</span>
+<span>0.05% (0.05%) Kernel#require_relative [4 calls, 4 total]</span>
 <ul style="display:none">
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.75%) IO#set_encoding [8 calls, 16 total]</span>
+<span>0.00% (1.63%) Class#inherited [2 calls, 2 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.28%) Module#method_added [13 calls, 77 total]</span>
+<span>0.00% (0.68%) IO#set_encoding [8 calls, 16 total]</span>
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.17%) Class#inherited [2 calls, 2 total]</span>
+<span>0.00% (0.31%) Module#method_added [15 calls, 79 total]</span>
 </li>
 </ul>
 </li>
@@ -3585,7 +3611,7 @@
 </li>
 <li class="color01" style="display:none">
 <a href="#" class="toggle empty" ></a>
-<span>0.00% (0.00%) Module#method_added [3 calls, 77 total]</span>
+<span>0.00% (0.00%) Module#method_added [3 calls, 79 total]</span>
 </li>
 </ul>
 </li>
