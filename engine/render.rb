@@ -1,15 +1,13 @@
 require 'colorize'
 require_relative 'pieces'
-# piece notation.
-#{
-    # position => [0,0]
-    # piece name => "R4"
-    # rotation => 2
-#}
+require_relative 'game'
+
+# interface this later
+require_relative '../ai_rand/run'
+require_relative '../ai_greedy/run'
 
 # render lists of white and black pieces
 def render(pieces_white,pieces_black)
-    system "clear"
     white = list_to_coords(pieces_white)
     black = list_to_coords(pieces_black)
     (-1..14).each do |y|
@@ -26,100 +24,62 @@ def render(pieces_white,pieces_black)
     end
 end
 
-# convert a piece object to occupied squares
-def piece_to_coord(p)
-    piece_data = get_piece_list()[p["name"]]
-    # rotate
-    p["rotation"].times {piece_data = rot(piece_data)}
-    # add position
-    piece_data.map {|l| [p["position"][0] + l[0], p["position"][1] + l[1]]}
+def score(piece_names)
+    piece_names.map{|p| get_piece_list()[p].length}.sum
 end
 
-# convert a list of pieces to list of occupied squares
-def list_to_coords(pieces)
-    board = []
-    pieces.each do |p|
-        board += piece_to_coord(p)
-    end
-    return board
-end
+def play_game(white_ai, black_ai, render_game, clear_render)
+    # auto place first tile (for test)
+    white_pieces_left = get_piece_list.keys
+    black_pieces_left = get_piece_list.keys
 
-# return false if any coord in list OOB
-def OOB(coords)
-    coords.any? {|c| c[0] < 0 || c[1] < 0 || c[0] > 13 || c[1] > 13}
-end
+    white_pieces_placed = []
+    black_pieces_placed = []
 
-# return true if piece can be added to board.
+    # generate game states
+    white_turn = true
+    white_yield = false
+    black_yield = false
 
-def legal(piece, white_prev, black_prev, white_turn)
-    # is piece used already?
-    return false if white_turn and white_prev.map{|p| p["name"]}.include? piece["name"] 
-    return false if !white_turn and black_prev.map{|p| p["name"]}.include? piece["name"]
-
-    # is piece in bounds?
-    new_state = list_to_coords((white_prev + black_prev).append(piece))
-    return false if OOB(new_state)
-
-    player_pieces = white_turn ? white_prev : black_prev   
-    opp_pieces = white_turn ? black_prev : white_prev
-
-    # does piece overlap any on opposing team?
-    return false if (piece_to_coord(piece) & list_to_coords(opp_pieces)).any?
-
-    # does piece overlap OR touch on non-corner for same team?     
-    illegal = list_to_coords(player_pieces).map{|l| [
-        [l[0],l[1]],
-        [-1+l[0],l[1]],
-        [1+l[0],l[1]],
-        [l[0],-1+l[1]],
-        [l[0],1+l[1]]
-        ]}.flatten(1).uniq
-
-    return false if (piece_to_coord(piece) & illegal).any?
-
-    # does piece touch at least one corner of another friendly piece?
-    illegal = list_to_coords(player_pieces).map{|l| [
-        [-1+l[0],-1+l[1]],
-        [1+l[0],-1+l[1]],
-        [-1+l[0],1+l[1]],
-        [1+l[0],1+l[1]]
-        ]}.flatten(1).uniq
-
-    return (piece_to_coord(piece) & illegal).any?
-
-end
-
-white_pieces_left = get_piece_list.keys
-black_pieces_left = get_piece_list.keys
-white_pieces_left.delete("1")
-black_pieces_left.delete("1")
-
-white_pieces_placed = [        
-    {
-    "name" => "1",
-    "rotation" => 0,
-    "position" => [0,0]
-}]
-
-black_pieces_placed = [        
-    {
-    "name" => "1",
-    "rotation" => 0,
-    "position" => [13,13]
-}]
-
-white_turn = true
-
-while(true)
-
+    # game loop
     while(true)
-        # make up a move
-        move = 
-        {
-            "name" => white_turn ? white_pieces_left.sample : black_pieces_left.sample,
-            "rotation" => rand(4),
-            "position" => [rand(14),rand(14)]
-        }
+        # skip turn if yield.
+        if (white_turn && white_yield)
+            white_turn = !white_turn
+            break if (white_yield and black_yield)
+            next
+        end
+
+        if ((!white_turn) && black_yield)
+            white_turn = !white_turn
+            break if (white_yield and black_yield)
+            next
+        end
+
+        return [score(white_pieces_left),score(black_pieces_left)] if (white_pieces_left == [] or black_pieces_left == [])
+        
+
+        # collect the move.
+        if(white_turn)
+            move = white_ai.run(white_pieces_placed, black_pieces_placed)
+        else
+            move = black_ai.run(black_pieces_placed,white_pieces_placed)
+        end
+
+        # if the move was nil, they yielded.
+        if(move == nil)
+            if (white_turn)
+                white_yield = true 
+                puts "White has yielded. Skip turn." if render_game
+                puts
+            else
+                black_yield = true 
+                puts "Black has yielded. Skip turn." if render_game
+                puts
+            end
+            white_turn = !white_turn
+            next
+        end
 
         if legal(move,white_pieces_placed,black_pieces_placed,white_turn)
             if(white_turn)
@@ -129,21 +89,47 @@ while(true)
                 black_pieces_placed.append(move)
                 black_pieces_left.delete(move["name"])
             end
-            break
+        else
+            # invalid move, so yield.
+            puts "Illegal move posted by " + (white_turn ? "White" : "Black")
+            if (white_turn)
+                white_yield = true 
+                puts "White has yielded. Skip turn." if render_game
+                puts
+            else
+                black_yield = true 
+                puts "Black has yielded. Skip turn." if render_game
+                puts
+            end
+            white_turn = !white_turn
+            next
         end
+
+        if(render_game)
+            # Render does no error checking, beware
+            system "clear" if clear_render
+            render(white_pieces_placed,black_pieces_placed)
+            puts(((!white_turn) ? "White" : "Black") + " to move.")
+            puts("White pieces left:\n" + white_pieces_left.to_s + " (" + score(white_pieces_left).to_s + ")") 
+            puts("Black pieces left:\n" + black_pieces_left.to_s + " (" + score(black_pieces_left).to_s + ")" )
+            puts
+        end
+        white_turn = !white_turn
     end
 
-    # Render does no error checking, beware
-    render(
-        white_pieces_placed,
-        black_pieces_placed
-        )
-    white_turn = !white_turn
-
-    puts("White pieces left:\n" + white_pieces_left.to_s)
-    puts("Black pieces left:\n" + black_pieces_left.to_s)
-    puts(((white_turn) ? "White" : "Black") + " to move.")
-    sleep(1)
+    return [score(white_pieces_left),score(black_pieces_left)]
 end
 
+=begin
+#analysis (slow)
+10.times do 
+    score = play_game(Greedy.new,Rand.new, false, false)
+    puts "GREEDY #{score[0]} vs RAND #{score[1]}" 
 
+    score = play_game(Rand.new,Greedy.new, false, false)
+    puts "RAND #{score[0]} vs GREEDY #{score[1]}" 
+end
+=end
+
+#show game
+score = play_game(Rand.new,Greedy.new, true, false)
