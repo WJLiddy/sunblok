@@ -40,10 +40,10 @@ class Greedy
         @@attaches = {}
         piece_list.each do |k,v|
             dirs = {}
-            dirs["SE"] = v.map{|p| [p[0]+1,p[1]+1]} - adj(v,true)
-            dirs["NE"] = v.map{|p| [p[0]+1,p[1]-1]} - adj(v,true)
-            dirs["NW"] = v.map{|p| [p[0]-1,p[1]-1]} - adj(v,true)
-            dirs["SW"] = v.map{|p| [p[0]-1,p[1]+1]} - adj(v,true)
+            dirs["SE"] = (v.map{|p| [p[0]+1,p[1]+1]} - adj(v,true)).map{|p| [p[0]-1,p[1]-1]} 
+            dirs["NE"] = (v.map{|p| [p[0]+1,p[1]-1]} - adj(v,true)).map{|p| [p[0]-1,p[1]+1]} 
+            dirs["NW"] = (v.map{|p| [p[0]-1,p[1]-1]} - adj(v,true)).map{|p| [p[0]+1,p[1]+1]} 
+            dirs["SW"] = (v.map{|p| [p[0]-1,p[1]+1]} - adj(v,true)).map{|p| [p[0]+1,p[1]-1]} 
             @@attaches[k] = dirs
         end
     end
@@ -77,12 +77,31 @@ class Greedy
     def generate_legal_board_mount_points(own_placed, own_placed_adj, enemy_placed)
         # first, generate all diagonals where we can attach a piece.
         mount_points = diag(own_placed)
-        # check the mount direction (used later)
 
         # disregard any mount points that are covered by another piece, or out of bounds.
         legal_mount_points = (mount_points - (own_placed_adj + enemy_placed + @@OOB_LIST))
 
-        return legal_mount_points
+        lmpwd = []
+        # check the mount direction (used later)
+        legal_mount_points.each do |m|
+            if(own_placed.include? [m[0]+1,m[1]+1] or enemy_placed.include? [m[0]+1,m[1]+1])
+                lmpwd << [m,"NE"]
+                next
+            end
+            if(own_placed.include? [m[0]-1,m[1]+1] or enemy_placed.include? [m[0]-1,m[1]+1])
+                lmpwd << [m,"NW"]
+                next
+            end
+            if(own_placed.include? [m[0]+1,m[1]-1] or enemy_placed.include? [m[0]+1,m[1]-1])
+                lmpwd << [m,"SE"]
+                next
+            end
+            if(own_placed.include? [m[0]-1,m[1]-1] or enemy_placed.include? [m[0]-1,m[1]-1])
+                lmpwd << [m,"SW"]
+                next
+            end
+        end
+        return lmpwd
     end
 
     # expensive
@@ -125,14 +144,14 @@ class Greedy
             # for every piece left...
             remaining_pieces.each do |r|
                 pid = @@pids[r]
-                piece_list[r].each do |piece_mount_point|
+                @@attaches[r][m[1]].each do |piece_mount_point|
                     # the inner loop here does a tiny amount of math.
                     # it calculates the piece to consider and looks up the bitboard.
                     # i do not think i can make this faster.
 
                     # so we have a piece, and a mount point.
-                    position0 = m[0] + -piece_mount_point[0]
-                    position1 = m[1] + -piece_mount_point[1]
+                    position0 = m[0][0] + -piece_mount_point[0]
+                    position1 = m[0][1] + -piece_mount_point[1]
                     # Make the cache identifier
                     cachestr = (position1 << 16) + (position0 << 8) + pid
                     # Look up the bitstring for the piece in that location
