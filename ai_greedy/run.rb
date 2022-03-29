@@ -131,15 +131,12 @@ class Greedy
 
         # To check the move, make sure nothing is: covered by enemy, or own + adj squares, or out of bounds.
         # if it's not any of these, it is a legal move.
-        illegal_spots = adj(own_placed, true) + enemy_placed + @@OOB_LIST
+        illegal_spots = own_placed_adj + enemy_placed + @@OOB_LIST
 
         illegal_bitwise = to_bitwise(illegal_spots)
 
         moves_prelim = []
 
-        # this triple loop here is the killer: about 50% of time is stuck in it.
-        # there's probably a technique where i can pre-compute the corners of each block @ each orientation.
-        # that way i don't have to sift through many false positives.
         legal_board_mount_points.each do |m|
             # for every piece left...
             remaining_pieces.each do |r|
@@ -148,7 +145,6 @@ class Greedy
                     # the inner loop here does a tiny amount of math.
                     # it calculates the piece to consider and looks up the bitboard.
                     # i do not think i can make this faster.
-
                     # so we have a piece, and a mount point.
                     position0 = m[0][0] + -piece_mount_point[0]
                     position1 = m[0][1] + -piece_mount_point[1]
