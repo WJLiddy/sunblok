@@ -5,6 +5,7 @@ require_relative 'game'
 # interface this later
 require_relative '../ai_rand/run'
 require_relative '../ai_greedy/run'
+require_relative '../ai_minimax/run'
 
 # render lists of white and black pieces
 def render(pieces_white,pieces_black)
@@ -117,22 +118,38 @@ def play_game(white_ai, black_ai, render_game, clear_render)
         end
         white_turn = !white_turn
     end
-
     return [score(white_pieces_left),score(black_pieces_left)]
 end
 
-=begin
-#analysis (slow)
-10.times do 
-    score = play_game(Greedy.new,Rand.new, false, false)
-    puts "GREEDY #{score[0]} vs RAND #{score[1]}" 
 
-    score = play_game(Rand.new,Greedy.new, false, false)
-    puts "RAND #{score[0]} vs GREEDY #{score[1]}" 
+
+res = play_game(MiniMax.new(3),MiniMax.new(3), true, true)
+
+
+=begin
+AIs = [
+["SMALL_FIRST",Greedy.new(false)],
+["LARGE_FIRST",Greedy.new(true)],
+["MINIMAX_3",MiniMax.new(3)],
+["MINIMAX_4",MiniMax.new(4)],
+["RANDOM",Rand.new()],
+]
+
+AIs.permutation(2).each do |a|
+    record = [0,0,0]
+    25.times do 
+        res = play_game(a[0][1],a[1][1], false, false)
+        record[0] += 1 if res[0] < res[1]
+        record[1] += 1 if res[0] == res[1]
+        record[2] += 1 if res[0] > res[1]
+    end
+    25.times do 
+        res = play_game(a[1][1],a[0][1], false, false)
+        record[2] += 1 if res[0] < res[1]
+        record[1] += 1 if res[0] == res[1]
+        record[0] += 1 if res[0] > res[1]
+    end
+    puts a[0][0] + " vs " + a[1][0]
+    puts record
 end
 =end
-
-# with truffleruby: ~100 games/s
-500.times do 
-    score = play_game(Greedy.new(false),Greedy.new(true), true, true)
-end

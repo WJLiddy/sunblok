@@ -24,11 +24,12 @@ class Rand
         end
 
         # else.. randompick lol
-        10000.times do |i|
+        # this AI is no good and needs fixed.
+        500.times do |i|
             # make up a move
             move = {
                 "name" => (get_piece_list().keys - own.map{|n| n["name"]}).sample,
-                "rotation" => rand(4),
+                "rotation" => 0,
                 "position" => [rand(14),rand(14)]
             }
             # see if it's valid

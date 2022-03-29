@@ -1,4 +1,4 @@
-class Greedy
+class MiniMax
     # given a piece's position, pre-generate a bitboard that can be compared against the real board. 
     @@bit_cache = {}
     # pre-generate an integer for each piece's position, used for the bitboard.
@@ -7,12 +7,9 @@ class Greedy
     @@OOB_LIST = []
     # generate attachment points for each piece.
     @@attaches = {}
-    # flag to choose the largest piece first or smallest piece?
-    @large_first = false
-
-    def initialize(large_first)
-        @large_first = large_first
-
+    
+    def initialize(ply)
+        @ply = ply
         # preload the cache with every piece bitboard.
         return if(@@bit_cache.size() != 0)
         piece_list = get_piece_list()
@@ -47,7 +44,7 @@ class Greedy
             @@attaches[k] = dirs
         end
     end
-
+    
     def run(own,enemy)
         if(own.length == 0)
             # start with book move.
@@ -71,7 +68,28 @@ class Greedy
                 return ret
             end
         end
-        enumerate_moves(own,enemy)
+        return minimax(own,enemy,@ply, true)[0]
+    end
+
+    def eval(own,enemy)
+        own.map{|o| get_piece_list()[o["name"]].length}.sum - enemy.map{|o| get_piece_list()[o["name"]].length}.sum 
+    end
+
+    def minimax(own,enemy,depth,maximizing)
+
+        if(depth == 0)
+            return [nil, eval(own,enemy)]
+        end
+
+        if(maximizing)
+            all_moves = enumerate_moves(own,enemy)
+            return [nil, -1000] if all_moves.empty? # the worst thing we can do is place NO more pieces.
+            return all_moves.map{|m| [m, minimax(own + [m], enemy, depth - 1, false)[1]]}.max{|a,b| a[1] <=> b[1]}
+        else
+            all_moves = enumerate_moves(enemy,own)
+            return [nil, 1000] if all_moves.empty? # the best thing we can do is stop enemy piece placage.
+            return all_moves.map{|m| [m, minimax(own, enemy + [m], depth - 1, true)[1]]}.min{|a,b| a[1] <=> b[1]}
+        end
     end
 
     def generate_legal_board_mount_points(own_placed, own_placed_adj, enemy_placed)
@@ -167,13 +185,6 @@ class Greedy
                 end
             end
         end
-        return nil if (moves_prelim.length == 0)
-        # randomize list so that we don't always pick the same move.
-        moves_prelim.shuffle!
-        if(@large_first)
-        return moves_prelim.max {|a,b| (piece_list[a["name"]].length) <=> (piece_list[b["name"]].length)}
-        else
-        return moves_prelim.min {|a,b| (piece_list[a["name"]].length) <=> (piece_list[b["name"]].length)}
-        end    
+        return moves_prelim
     end
 end
