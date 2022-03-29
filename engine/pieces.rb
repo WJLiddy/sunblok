@@ -1,3 +1,4 @@
+require_relative "game"
 # later, make immutable
 $base_pieces = 
 {
@@ -26,10 +27,6 @@ $base_pieces =
     "W" => [[0,0],[0,1],[1,1],[1,2],[2,2]],
     "P" => [[0,0],[0,1],[1,1],[1,0],[0,2]]
 }
-
-def get_subpieces()
-
-end
 
 def get_piece_list()
     return $base_pieces
